@@ -2,10 +2,12 @@ import pymupdf
 import os
 import shutil
 import pathlib
+from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 
 def extract_text(file_path, dst_path):
     try:
+        os.makedirs(dst_path, exist_ok=True)
         if file_path.endswith(".DS_Store"):
             return
         pdf_file = pymupdf.open(file_path)
@@ -24,6 +26,7 @@ def extract_text(file_path, dst_path):
 
 def extract_images(file_path, dst_path):
     try:
+        os.makedirs(dst_path, exist_ok=True)
         if file_path.endswith(".DS_Store"):
             return
         doc = pymupdf.open(file_path)  # open a document
@@ -42,11 +45,15 @@ def extract_images(file_path, dst_path):
                 if pix.n - pix.alpha > 3:  # CMYK: convert to RGB first
                     pix = pymupdf.Pixmap(pymupdf.csRGB, pix)
 
-                # save the image as png with the original file name and image ids
-                image_filename = f"{file_stem}_page_{page_index + 1}_image_{image_index}.png"
-                image_path = os.path.join(dst_path, image_filename)
-                pix.save(image_path)
-                pix = None
+                width, height = pix.width, pix.height
+                product = width * height
+
+                if product >= 100000:
+                    # save the image as png with the original file name and image ids
+                    image_filename = f"{file_stem}_page_{page_index + 1}_image_{image_index}.png"
+                    image_path = os.path.join(dst_path, image_filename)
+                    pix.save(image_path)
+                    pix = None
 
     except Exception as e:
         print(e)
@@ -60,14 +67,14 @@ def process_files(dir_path, dst_path):
         print("Directory does not exist")
         return
 
-    # check if the destination directory exists if not create
-    os.makedirs(dst_path, exist_ok=True)
-
     # for each file in the directory extract text
     for file in os.listdir(dir_path):
         file_path = os.path.join(dir_path, file)
-        extract_text(file_path, dst_path)
-        extract_images(file_path, dst_path)
+        extract_text(file_path, os.path.join(dst_path, 'text'))
+        extract_images(file_path, os.path.join(dst_path, 'images'))
+
+        # at the end move the file to the processed directory
+        shutil.move(file_path, os.path.join('data/processed_files', file))
 
 
 if __name__ == "__main__":
