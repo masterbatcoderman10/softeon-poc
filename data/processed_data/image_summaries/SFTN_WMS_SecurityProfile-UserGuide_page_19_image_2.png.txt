@@ -1,0 +1,43 @@
+The image is a screenshot of a "Security Profile" configuration screen from a software application by Softeon. This screen appears to be part of a warehouse management system (WMS) and it is used to manage user access permissions.
+
+Here's a detailed breakdown:
+
+1. **Header**:
+   - The top-left corner shows the Softeon logo.
+   - The title of the page is "Security Profile."
+   - There are navigation tabs: User, Group, Advanced User Map, Module Map, User Access Map, and Menu Access.
+
+2. **Configuration Fields**:
+   - **Warehouse**: Dropdown selection showing "WH1."
+   - **Bldg ID**: Dropdown selection showing "B1."
+   - **User Group**: Dropdown selection showing "ADM."
+   - **Business Unit**: Text field (empty).
+   - **App ID**: Text field showing "WMS."
+   - **Parent Menu**: Text field (empty).
+   - Additionally, there are checkboxes for "RF Menu" and "Hybrid" (both unchecked).
+
+3. **Buttons**:
+   - Submit (highlighted in red)
+   - Copy
+   - Reset
+   - Find
+   - Refresh
+   - Report
+
+4. **Permissions Table**:
+   - The table lists various screen names under the "Screen Name" column, each associated with a unique identifier. Examples include:
+     - Masters - (1520)
+     - Inbound - (152001)
+     - Warehouse Setup - (15200101)
+     - Location Maintenance - (1520010101)
+     - Location Type - (1520010104)
+     - Aisle Creation - (1520010113)
+     - Aisle Header - (15200101301)
+     - Aisle Detail - (15200101302)
+   - The table has three columns for permissions: View, Update, and Delete.
+   - All options in the View, Update, and Delete columns are checked for each screen name.
+
+5. **Miscellaneous**:
+   - The top-right corner contains a search bar and various icons for navigation, help, and user options.
+
+This screen allows administrators to configure which screens a user group (in this case, "ADM") can view, update, or delete in a warehouse management system.

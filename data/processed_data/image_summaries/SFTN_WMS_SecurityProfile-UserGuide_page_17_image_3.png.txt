@@ -1,0 +1,43 @@
+This image depicts a user interface of a security profile management system, likely part of a software application by Softeon. The interface is titled "Security Profile" and includes various tabs such as User, Group, Advanced User Map, Module Map, User Access Map, and Menu Access. The currently active tab appears to be "User Access Map."
+
+### Top Section:
+- **Dropdowns and Fields:**
+  - **Organization:** ORG1 is selected from the dropdown.
+  - **App ID:** WMS is selected.
+  - **Warehouse:** WH1 is selected.
+  - **Bldg ID:** This field is empty and likely allows for an optional building ID input.
+  - **User Group:** MIS is specified.
+  - **User ID:** A specific user ID, "ARUNPRAK," is entered.
+  - **Business Unit:** This field is empty.
+
+- **Buttons:**
+  - **Submit** (highlighted with a red border)
+  - **Reset**
+  - **Find**
+  - **Refresh**
+  - **Copy**
+
+### Middle Section:
+- **Search Criteria:** Displays the current search criteria, which include User Group (ADM), App ID (WMS), Business Unit, Warehouse ID (WH1), and Building ID.
+
+### Bottom Section (Table):
+- **Columns:**
+  - **App ID:** All entries are WMS.
+  - **Warehouse ID:** All entries are WH1.
+  - **Bldg ID:** Includes various IDs such as AED, B1, and B2.
+  - **Business Unit:** Includes various IDs such as AED, 01, 02, 03, 04, 05, 06, 14, and 11.
+
+- **Rows:** Each row corresponds to a combination of App ID, Warehouse ID, Bldg ID, and Business Unit.
+- **Checkboxes:** Multiple rows have checkboxes, with the first two rows being checked.
+
+### Navigation and Tools:
+- **Search Menu:** A search bar is available at the top right for navigating menus.
+- **Icons:**
+  - A magnifying glass (search)
+  - A circular arrow (refresh)
+  - A question mark (help)
+  - An information icon (info)
+  - A user icon (profile)
+  - The Softeon logo is present in the top-left corner.
+
+This interface allows users to manage security profiles by specifying various criteria and performing actions such as submitting, finding, and resetting the data based on the criteria entered. The table displays specific mappings between application IDs, warehouse IDs, building IDs, and business units, allowing for easy management of user access and permissions.

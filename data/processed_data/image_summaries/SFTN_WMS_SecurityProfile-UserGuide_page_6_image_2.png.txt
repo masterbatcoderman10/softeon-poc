@@ -1,0 +1,62 @@
+The image depicts a "Security Profile" user interface from a software application by Softeon. The interface appears to be for managing user accounts and their security settings.
+
+### Sections and Fields:
+1. **Top Navigation:**
+   - Tabs: User, Group, Advanced User Map, Module Map, User Access Map, Menu Access.
+   - Search bar for searching the menu.
+
+2. **User Information Section (highlighted with red boxes):**
+   - **First Name:** Automation (required field)
+   - **Last Name:** User (required field)
+   - **User ID:** ATMUSER1 (required field)
+   - **Password:** (required field, but the actual text is hidden)
+   - **Confirm Password:** (required field, but the actual text is hidden)
+   - **Supervisor Password:** (required field, but the actual text is hidden)
+
+3. **Other User Details:**
+   - **E-Mail:** (empty)
+   - **Portal/Dashboard:** -NA-
+   - **Voice User Picking Mode:** (dropdown option)
+   - **Two Factor Auth Req:** NOT REQUIRED (dropdown option)
+   - **User Group:** (empty)
+
+4. **Checkboxes:**
+   - **Admin User:** (unchecked)
+   - **RF User:** (checked)
+   - **Login Locked:** (unchecked)
+   - **Delete security questions:** (unchecked)
+   - **Change password during next logon:** (checked)
+   - **Active:** (checked)
+
+5. **Additional Info Section:**
+   - **User Type:** Internal Users (dropdown option)
+   - **User Type ID:** Internal (required field)
+   - **Logging Type:** P - PROCESS (dropdown option)
+   - **Log Severity Level:** (dropdown option)
+   - **Pwd Last Upd TStamp:** 06/28/2019 00:00:00
+
+6. **Printers and Directories:**
+   - **Label Printer:** DUMMY_LABEL
+   - **Report Printer:** DUMMY_LASER
+   - **Report Directory:** (empty)
+   - **Hazmat Handling Level:** (empty)
+   - **Authentication:** ReField4
+   - **External User ID:** (empty)
+
+### Bottom Buttons:
+- **Submit**
+- **Delete**
+- **Reset**
+- **Find**
+- **Refresh**
+- **Security Questions**
+- **Copy From**
+
+### Top Right Icons:
+- Home
+- Reload
+- Help
+- Settings
+- Logout
+
+This interface allows administrators to create, edit, and manage user profiles, including setting passwords, assigning roles and permissions, and configuring security settings.

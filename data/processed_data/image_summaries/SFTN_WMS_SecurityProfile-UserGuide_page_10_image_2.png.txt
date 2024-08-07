@@ -1,0 +1,45 @@
+The provided image shows a screenshot of a "Security Profile" interface from a software application named Softeon. The interface displays various tabs and functionalities for managing user groups.
+
+### Sections and Tabs:
+1. **Top Navigation Bar:**
+   - Contains tabs labeled "User," "Group," "Advanced User Map," "Module Map," "User Access Map," and "Menu Access," indicating different sections for managing user profiles and access controls.
+
+2. **Group Tab:**
+   - The "Group" tab is currently selected and active.
+
+### User Group Management:
+- **Input Fields:**
+  - **User Group:** An input field with the text "ADM" filled in.
+  - **Description:** An input field with the text "Admin user group" filled in.
+  - **User Group Level:** A dropdown menu with the value "2-Admin" selected.
+  - **Active:** A checkbox that is checked, indicating that the group is active.
+
+- **Action Buttons:**
+  - **Submit:** A button for submitting the current user group information.
+  - **Delete:** A button for deleting the selected user group.
+  - **Reset:** A button for resetting the form fields.
+  - **Find:** A button for searching user groups.
+  - **Refresh:** A button for refreshing the list of user groups.
+
+### User Group Data Table:
+- Displays a list of user groups with the following columns:
+  - **User Group**
+  - **Description**
+  - **User Group Level**
+  - **Status**
+
+- The table includes the following user groups:
+  - **ADM:** Admin user group | 2-Admin | Active
+  - **DMUG:** demouser | 2-Admin | Active
+  - **EXTGROUP:** EXTGROUP | 2-Admin | Active
+  - **MIS:** MIS user group | 3-MIS | Active
+  - **S7UG1:** ATM User Group | 2-Admin | Active
+  - **S7UG2:** ATM User Group | 2-Admin | Active
+  - **S7UG3:** ATM User Group | 2-Admin | Active
+  - **UIGRP:** UI Group | 5-Users | Active
+
+### Additional Elements:
+- **Search Menu:** A search bar at the top right corner for searching within the application.
+- **Icons:** Various icons for functionalities such as search, help, notifications, and user profile.
+
+The interface appears to be part of an administrative panel for managing user groups, their descriptions, levels, and statuses within the Softeon application.

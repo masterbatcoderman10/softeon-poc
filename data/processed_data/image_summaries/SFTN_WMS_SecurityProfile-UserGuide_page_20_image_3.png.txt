@@ -1,0 +1,47 @@
+The image is a screenshot of a "Security Profile" configuration page from a software application by Softeon. The interface is used to manage user access within a warehouse management system (WMS). Here are the key elements of the interface:
+
+1. **Navigation Tabs:**
+   - User
+   - Group
+   - Advanced User Map
+   - Module Map
+   - User Access Map
+   - Menu Access (currently active)
+
+2. **Selection Fields:**
+   - **Warehouse:** Dropdown menu selected as "WH1".
+   - **Bldg ID:** Selected as "B1".
+   - **User Group:** Selected as "ADM".
+   - **App ID:** Selected as "WMS".
+   - **Business Unit:** Input field.
+   - **Parent Menu:** Input field.
+   - **Checkboxes:**
+     - RF Menu
+     - Hybrid
+
+3. **Action Buttons:**
+   - **Submit:** To submit changes.
+   - **Copy:** To copy configurations.
+   - **Reset:** To reset the form.
+   - **Find:** To search.
+   - **Refresh:** To refresh the page.
+   - **Report:** To generate a report (highlighted with a red border).
+
+4. **Permissions Table:**
+   - Columns for different permissions: View, Update, Delete.
+   - Rows for different screen names along with their codes:
+     - Masters (1520)
+     - Inbound (152001)
+     - Warehouse Setup (15200101)
+     - Location Maintenance (1520010101)
+     - Location Type (1520010104)
+     - Aisle Creation (1520010113)
+     - Aisle Header (15200101301)
+     - Aisle Detail (15200101302)
+   - Checkboxes under View, Update, and Delete columns, indicating the permissions granted.
+
+5. **Search and Help Icons:**
+   - Search menu bar at the top-right corner.
+   - Icons for search, notifications, help, and user profile.
+
+The interface is structured to allow administrators to manage access rights for different user groups within the warehouse management system, specifying what actions (View, Update, Delete) are allowed for each screen or function within the application.

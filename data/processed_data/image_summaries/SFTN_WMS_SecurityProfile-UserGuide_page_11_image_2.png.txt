@@ -1,0 +1,37 @@
+The image is a screenshot of a security profile interface from a software application named Softeon. The interface is under the "Advanced User Map" tab, part of several other tabs including "User," "Group," "Module Map," "User Access Map," and "Menu Access."
+
+The interface is divided into two primary sections:
+
+1. **User Group Selection (Left Side):**
+   - A list of user groups is displayed with radio button options for selection. 
+   - The user groups listed include:
+     - ADM (Admin user group)
+     - DMUG (demouser)
+     - EXTGROUP (EXTGROUP)
+     - MIS (MIS user group)
+     - S7UG1 (ATM User Group)
+     - S7UG2 (ATM User Group)
+     - S7UG3 (ATM User Group)
+     - UIGRP (UI Group)
+   - The "ADM" (Admin user group) is currently selected, indicated by the highlighted row and checked radio button.
+
+2. **User Selection (Right Side):**
+   - Displays a list of users with their User ID and Name.
+   - Users are categorized as either "Mapped Users" or "Unmapped Users":
+     - Mapped Users (highlighted with green checkmarks):
+       - CMURUGES (CHANDRAMOHAN MURUGESAN)
+       - JARROYO (j arroyo)
+       - MAHESH (mahesh d)
+       - SFTADMIN (SFT ADMIN)
+     - Unmapped Users (highlighted with red cross marks):
+       - ARUNPRAK (ARUN PRAKASH)
+       - ATMUSER1 (Automation User)
+       - ATMUSER2 (Automation User)
+       - ATMUSER3 (Automation User)
+       - CAMERON (Cameron Scott Loveall)
+       - DEMOUSER (demo user)
+   - The list can be scrolled for additional users.
+
+At the bottom of the interface, there are three action buttons: "Submit," "Reset," and "Refresh."
+
+The header includes the Softeon logo on the right and a search bar along with a series of icons for navigation and help.

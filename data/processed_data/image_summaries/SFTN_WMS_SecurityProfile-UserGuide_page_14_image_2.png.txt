@@ -1,0 +1,47 @@
+The image is a screenshot of a Security Profile configuration interface from a software application named Softeon. The interface is focused on mapping modules to user groups or user IDs.
+
+### Overview:
+- **Tabs:**
+  - The interface has several tabs at the top: User, Group, Advanced User Map, Module Map, User Access Map, and Menu Access. The current tab selected is "Module Map."
+
+### Configuration Options:
+- **Selection Type:**
+  - There are two radio buttons at the top to select either "User Group" or "User ID". The "User ID" option is currently selected.
+
+- **Warehouse:**
+  - A dropdown menu labeled "Warehouse" is available, and it currently displays "WH1."
+
+- **Module:**
+  - A dropdown menu labeled "Module" is available, and it currently displays "ADM-Admin Management."
+
+### User Group Selection:
+- **User Group Table:**
+  - A table labeled "User Group Selection" lists several user groups with two columns: "User Group" and "Name."
+    - The user groups listed are:
+      - ADM: Admin user group
+      - DMUG: demouser
+      - EXTGROUP: EXTGROUP
+      - MIS: MIS user group
+      - S7UG1: ATM User Group
+      - UIGRP: UI Group
+
+### User Selection:
+- **User Selection Table:**
+  - There is an empty table labeled "User Selection" with two columns: "User ID" and "Name." Since "User ID" is selected, it expects specific user IDs to be listed here.
+
+### Action Buttons:
+- **Buttons at the Bottom:**
+  - There are three action buttons at the bottom of the interface:
+    - Submit (green)
+    - Reset (blue)
+    - Refresh (blue)
+
+### Additional Features:
+- **Search and Icons:**
+  - At the top right, there’s a search bar labeled "Search menu..." along with a set of icons representing search, undo, help, notifications, and user account options.
+
+### Branding:
+- **Logo:**
+  - The Softeon logo is visible at the top right corner of the interface.
+
+This interface seems to be used for assigning access and permissions to specific user groups or user IDs within different modules and warehouses in the Softeon system.

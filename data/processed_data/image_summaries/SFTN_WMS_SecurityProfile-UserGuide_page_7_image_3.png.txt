@@ -1,0 +1,55 @@
+The image displays a user interface screen from a software application by Softeon, specifically a "Security Profile" management page. The interface allows administrators to manage user profiles within the system.
+
+### Top Section: User Information Form
+- **Form Fields:**
+  - **First Name:** "Automation"
+  - **Last Name:** "User"
+  - **User ID:** "ATMUSER1"
+  - **Password:** [Field for entering a password]
+  - **Confirm Password:** [Field for confirming the password]
+  - **Supervisor Password:** [Field for entering a supervisor password, marked as required]
+  - **E-Mail:** [Field for entering an email, currently empty]
+  - **Portal/Dashboard:** "-NA-"
+  - **Voice User Picking Mode:** [Dropdown menu, currently empty]
+  - **Two Factor Auth Req:** "NOT REQUIRED"
+  - **User Group:** "S7UG1"
+
+- **Checkboxes:**
+  - **Admin User:** [Unchecked]
+  - **RF User:** [Checked]
+  - **Login Locked:** [Unchecked]
+  - **Delete security questions:** [Unchecked]
+  - **Change password during next logon:** [Checked]
+  - **Active:** [Checked]
+
+- **Buttons:**
+  - "Submit"
+  - "Delete"
+  - "Reset"
+  - "Find"
+  - "Refresh"
+  - "Security Questions"
+  - "Copy From" (highlighted with a red border)
+
+### Bottom Section: User List Table
+- **Columns:**
+  - User ID
+  - User Name
+  - User Type
+  - User Type ID
+  - User Group
+  - Picking Mode
+  - Report Printer
+  - Label Printer
+  - Status
+
+- **Highlighted Row:**
+  - **User ID:** "ATMUSER1"
+  - **User Name:** "Automation User"
+  - **User Type:** "Internal Users"
+  - **User Type ID:** "Internal"
+  - **User Group:** "S7UG1"
+  - **Picking Mode:** [not specified]
+  - **Report Printer:** "DUMMY_LASER"
+  - **Label Printer:** "DUMMY_LABEL"
+  - **Status:** "Active"

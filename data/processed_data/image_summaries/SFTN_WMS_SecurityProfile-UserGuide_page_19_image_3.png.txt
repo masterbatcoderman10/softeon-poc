@@ -1,0 +1,54 @@
+The image displays a screenshot of a "Security Profile" configuration page from a software application by Softeon. The page is divided into several sections and fields, with a user interface for managing access permissions.
+
+### Top Section:
+- **Navigation Tabs**: 
+  - `User`, `Group`, `Advanced User Map`, `Module Map`, `User Access Map`, `Menu Access` (currently selected).
+- **Search Bar**: Located in the upper right corner with a magnifying glass icon.
+
+### Main Form Fields:
+- **Warehouse**: A dropdown field with the value `WH1`.
+- **Bldg ID**: A text field with the value `B1`.
+- **User Group**: A dropdown field with the value `ADM`.
+- **Business Unit**: An input field.
+- **App ID**: A text field with the value `WMS`.
+- **Parent Menu**: An input field.
+- **Checkboxes**: 
+  - `RF Menu`
+  - `Hybrid`
+
+### Buttons:
+- **Submit** (green button)
+- **Copy** (green button with a red border around it, indicating it may be highlighted or active)
+- **Reset** (blue button)
+- **Find** (blue button)
+- **Refresh** (blue button)
+- **Report** (blue button)
+
+### Permissions Table:
+- **Columns**: 
+  - `Screen Name`
+  - `View`
+  - `Update`
+  - `Delete`
+- **Rows**: 
+  - `Masters - (1520)`
+  - `Inbound - (152001)`
+  - `Warehouse Setup - (15200101)`
+  - `Location Maintenance - (1520010101)`
+  - `Location Type - (1520010104)`
+  - `Aisle Creation - (1520010113)`
+  - `Aisle Header - (15200101301)`
+  - `Aisle Detail - (15200101302)`
+- **Checkboxes**: Each row has checkboxes under `View`, `Update`, and `Delete` columns. All checkboxes in the visible rows are checked, indicating full permissions for these actions.
+
+### Header:
+- **Softeon Logo**: Located at the top right.
+
+### Icons:
+- A set of icons is present near the search bar for additional functionalities (not explicitly described in the image).
+
+### Interface Design:
+- The interface follows a structured and organized layout with clear labels and input fields.
+- Predominantly uses a combination of blue, green, and grey colors.
+
+The page appears to be part of a warehouse management system (WMS) where user access and permissions for various screens and functionalities are managed for different user groups and business units.

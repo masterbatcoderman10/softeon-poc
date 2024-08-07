@@ -1,0 +1,14 @@
+The image is a screenshot of a user interface from a software application by Softeon. The title at the top reads "Copy Menu Access To." 
+
+Key elements in the interface include:
+
+1. **User Group Field**: 
+   - Label: "User Group" with an asterisk, indicating that this field is mandatory.
+   - Input Box: It has the value "EXTGROUP" entered.
+
+2. **Buttons**:
+   - **Submit**: A prominent button in teal color.
+   - **Reset**: A smaller button in blue.
+   - **Close**: Another smaller button in blue, similar to the Reset button.
+
+The interface appears to be used for copying menu access settings for user groups within the software.

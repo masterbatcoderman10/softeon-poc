@@ -1,0 +1,57 @@
+The image is a screenshot of a software interface named "Softeon" under the "Security Profile" section. This interface is used to manage user profiles within the system. Here's a detailed breakdown:
+
+### Top Navigation Bar
+- **Search Menu**: Located at the top right for easy navigation.
+- **Help Icons**: Icons for help, refresh, and user settings are present.
+- **Softeon Logo**: Positioned at the top left.
+
+### Tabs
+- **User**: The current active tab.
+- **Group**, **Advanced User Map**, **Module Map**, **User Access Map**, **Menu Access**: Other available tabs.
+
+### User Profile Form
+- **Fields**:
+  - **First Name**: Automation
+  - **Last Name**: User
+  - **User ID**: ATMUSER1
+  - **Password** and **Confirm Password**: Fields for setting a password.
+  - **Supervisor Password**: This field is mandatory, indicated by an asterisk.
+  - **Email**: Empty
+  - **Portal/Dashboard**: Not Applicable (NA) selected.
+  - **Voice User Picking Mode**: Dropdown menu.
+  - **Two Factor Auth Req**: Dropdown menu with "NOT REQUIRED" selected.
+  - **User Group**: S7UG1
+  
+- **Checkboxes**:
+  - **Admin User**
+  - **RF User**: Checked
+  - **Login Locked**
+  - **Delete security questions**
+  - **Change password during next logon**: Checked
+  - **Active**: Checked
+
+### Buttons
+- **Submit**
+- **Delete**
+- **Reset**
+- **Find**
+- **Refresh**
+- **Security Questions**
+- **Copy From**
+
+### User List Table
+- Columns: User ID, User Name, User Type, User Type ID, User Group, Picking Mode, Report Printer, Label Printer, Status
+- A highlighted row with User ID "ATMUSER1" and details:
+  - **User Name**: Automation User
+  - **User Type**: Internal Users
+  - **User Type ID**: Internal
+  - **User Group**: S7UG1
+  - **Picking Mode**: Empty
+  - **Report Printer**: DUMMY_LASER
+  - **Label Printer**: DUMMY_LABEL
+  - **Status**: Active
+
+### Additional Information
+- **Additional Info**: Collapsible section indicated by an arrow.
+
+This interface appears to be designed for managing and configuring user profiles, including setting passwords, assigning user groups, and setting permissions and preferences.

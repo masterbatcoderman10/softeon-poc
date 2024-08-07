@@ -1,0 +1,43 @@
+The image shows a screenshot of the "Security Profile" section of a software application, specifically from a module provided by Softeon.
+
+### Key Elements:
+1. **Header:**
+   - The application is branded with the Softeon logo on the top right.
+   - The section is titled "Security Profile."
+
+2. **Tabs:**
+   - Four tabs are visible: "User," "Group," "Advanced User Map," "Module Map," "User Access Map," and "Menu Access." 
+   - The "User Access Map" tab is currently selected.
+
+3. **Filters and Search Criteria:**
+   - **Organization (ORG1):** A dropdown menu is set to ORG1.
+   - **Warehouse (WH1):** Another dropdown menu set to WH1.
+   - **App ID (WMS):** A dropdown menu set to WMS.
+   - **Bldg ID:** A text field (currently empty).
+   - **User Group (ADM):** A dropdown menu set to ADM.
+   - **Business Unit:** A text field (currently empty).
+   - **User ID:** A text field (currently empty).
+
+4. **Action Buttons:**
+   - **Submit:** A prominent button outlined in red.
+   - **Reset:** A button to reset the form.
+   - **Find:** A button to search based on the criteria.
+   - **Refresh:** A button to refresh the information.
+   - **Copy:** A button to copy the information.
+
+5. **Search Results Table:**
+   - The table displays the search results based on the criteria.
+   - Columns include "App ID," "Warehouse ID," "Bldg ID," and "Business Unit."
+   - The "App ID" column shows "WMS" for all rows.
+   - The "Warehouse ID" column shows "WH1" for all rows.
+   - The "Bldg ID" column shows various identifiers like "AED" and "B1."
+   - The "Business Unit" column shows various identifiers such as "AED," "01," "02," etc.
+   - Checkboxes are present in the first column to select individual rows. Some are checked, and some are unchecked.
+
+6. **Search Criteria Summary:**
+   - Below the action buttons, a text line summarizes the search criteria: "Search Criteria User Group : ADM* App ID : WMS* Business Unit : Whse Id : WH1* Bldg ID : *".
+
+7. **Scrolling:**
+   - The table has a vertical scrollbar, indicating more results are available beyond the visible rows.
+
+This interface is likely used for managing user access and permissions within a specific application or warehouse management system.
