@@ -1,6 +1,8 @@
+from langchain_community.chat_message_histories.file import FileChatMessageHistory
+from langchain_community.chat_message_histories import ChatMessageHistory
 import io
 import re
-
+import tiktoken
 from IPython.display import HTML, display
 from langchain_core.runnables import RunnableLambda, RunnablePassthrough
 from PIL import Image
@@ -18,8 +20,12 @@ from langchain_core.pydantic_v1 import BaseModel, Field
 from langchain_core.runnables import RunnableWithMessageHistory, RunnableLambda
 from langchain.tools import BaseTool, StructuredTool, tool
 from .setup_retriever import retriever
+from langchain_core.runnables import RunnableWithMessageHistory, ConfigurableFieldSpec
+import base64
 load_dotenv()
 
+model = ChatOpenAI(
+    temperature=0, model="gpt-4o", max_tokens=1024)
 
 # def plt_img_base64(img_base64):
 #     """Disply base64 encoded string as image"""
@@ -27,6 +33,18 @@ load_dotenv()
 #     image_html = f'<img src="data:image/jpeg;base64,{img_base64}" />'
 #     # Display the image by rendering the HTML
 #     display(HTML(image_html))
+
+
+def get_message_history(file_path: str) -> FileChatMessageHistory:
+    # file_path = os.path.join('data', file_path)
+    return FileChatMessageHistory(file_path)
+
+
+def num_tokens_from_string(string: str) -> int:
+    """Returns the number of tokens in a text string."""
+    encoding = tiktoken.encoding_for_model('gpt-3.5-turbo')
+    num_tokens = len(encoding.encode(string))
+    return num_tokens
 
 
 def looks_like_base64(sb):
@@ -71,7 +89,10 @@ def resize_base64_image(base64_string, size=(128, 128)):
     resized_img.save(buffered, format=img.format)
 
     # Encode the resized image to Base64
-    return base64.b64encode(buffered.getvalue()).decode("utf-8")
+    base64_string = base64.b64encode(buffered.getvalue()).decode("utf-8")
+    # print tokens
+    # print(num_tokens_from_string(base64_string))
+    return base64_string
 
 
 def split_image_text_types(docs):
@@ -86,7 +107,7 @@ def split_image_text_types(docs):
         if isinstance(doc, Document):
             doc = doc.page_content
         if looks_like_base64(doc) and is_image_data(doc):
-            doc = resize_base64_image(doc, size=(1300, 600))
+            doc = resize_base64_image(doc, size=(400, 600))
             b64_images.append(doc)
         else:
             texts.append(doc)
@@ -116,6 +137,8 @@ def img_prompt_func(data_dict):
             "You are an expert support assistant that works for Softeon Warehouse Management System\n"
             "You will be given a mixed of text, and image(s) usually of application screens.\n"
             "Use this information to provide information and support related to the user question. \n"
+            "If no information is available, you will excuse yourself.\n"
+            "Please do not return the images as markdown, only your response.\n"
             f"User-provided question: {data_dict['question']}\n\n"
             "Text and / or tables:\n"
             f"{formatted_texts}"
@@ -125,33 +148,77 @@ def img_prompt_func(data_dict):
     return [HumanMessage(content=messages)]
 
 
+def contextualize_chain():
+
+    sys_message = """
+    - Based on the `chat_history` and the `input`, contextualize the query to a standalone form.
+    - If there's no `chat_history`, the `input` should be returned as is.
+    - Carefully consider how to best contextualize the query.
+    - Keep your answers brief and concise.
+    """
+
+    prompt = ChatPromptTemplate.from_messages(
+        [
+            ("system", sys_message),
+            MessagesPlaceholder("chat_history"),
+            ("user", "input")
+        ]
+    )
+
+    contextual_chain = prompt | model | StrOutputParser()
+
+    return contextual_chain
+
+
 def multi_modal_rag_chain(retriever):
     """
     Multi-modal RAG chain
     """
 
-    # Multi-modal LLM
-    model = ChatOpenAI(
-        temperature=0, model="gpt-4o", max_tokens=1024)
+    contextual_chain = contextualize_chain()
 
     # RAG pipeline
-    chain = (
+    rag_chain = (
+        contextual_chain
+        |
         {
             "context": retriever | RunnableLambda(split_image_text_types),
             "question": RunnablePassthrough(),
         }
         | RunnableLambda(img_prompt_func)
         | model
-        | StrOutputParser()
     )
 
+    chain_with_history = RunnableWithMessageHistory(
+        rag_chain,
+        get_message_history,
+        input_messages_key="input",
+        history_messages_key="chat_history",
+        history_factory_config=[ConfigurableFieldSpec(
+            id="file_path",
+            annotation=str,
+            name="File Path",
+            description="Unique identifier of the history",
+            default="",
+            is_shared=True
+        )]
+    )
+
+    chain = chain_with_history | StrOutputParser()
     return chain
 
 
-# if __name__ == "__main__":
-#     chain_multimodal_rag = multi_modal_rag_chain(retriever)
-#     response = chain_multimodal_rag.invoke(
-#         "What information can be found on the user creation screen?")
-#     print(response)
-# Create RAG chain
-chain_multimodal_rag = multi_modal_rag_chain(retriever)
+if __name__ == "__main__":
+    chain_multimodal_rag = multi_modal_rag_chain(retriever)
+    response = chain_multimodal_rag.invoke(
+        {"input": "Give me an overview of the warehouse management system"},
+        config={"file_path": "data/chat_histories/sample_history.txt"}
+    )
+    print(response)
+    # output = retriever.invoke(
+    #     "Give me an overview of the warehouse management system")
+
+    # for document in output:
+    #     print(num_tokens_from_string(pickle.loads(document)))
+    # Create RAG chain
+    # chain_multimodal_rag = multi_modal_rag_chain(retriever)

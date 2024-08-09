@@ -35,5 +35,10 @@ id_key = "doc_id"
 retriever = MultiVectorRetriever(
     vectorstore=vector_store,
     docstore=docstore,
-    id_key=id_key
+    id_key=id_key,
+    search_type="similarity_score_threshold",
+    search_kwargs={
+        "k": 5,
+        "score_threshold": 0.5  # This sets the minimum similarity value
+    }
 )
