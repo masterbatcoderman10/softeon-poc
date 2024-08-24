@@ -73,16 +73,20 @@ def is_image_data(b64data):
         return False
 
 
-def resize_base64_image(base64_string, size=(128, 128)):
+def resize_base64_image(base64_string, scale_factor):
     """
-    Resize an image encoded as a Base64 string
+    Resize an image encoded as a Base64 string by a scale factor
     """
     # Decode the Base64 string
     img_data = base64.b64decode(base64_string)
     img = Image.open(io.BytesIO(img_data))
 
+    # Calculate the new size based on the scale factor
+    new_size = (int(img.size[0] * scale_factor),
+                int(img.size[1] * scale_factor))
+
     # Resize the image
-    resized_img = img.resize(size, Image.LANCZOS)
+    resized_img = img.resize(new_size, Image.LANCZOS)
 
     # Save the resized image to a bytes buffer
     buffered = io.BytesIO()
@@ -90,8 +94,6 @@ def resize_base64_image(base64_string, size=(128, 128)):
 
     # Encode the resized image to Base64
     base64_string = base64.b64encode(buffered.getvalue()).decode("utf-8")
-    # print tokens
-    # print(num_tokens_from_string(base64_string))
     return base64_string
 
 
@@ -107,7 +109,7 @@ def split_image_text_types(docs):
         if isinstance(doc, Document):
             doc = doc.page_content
         if looks_like_base64(doc) and is_image_data(doc):
-            doc = resize_base64_image(doc, size=(400, 600))
+            doc = resize_base64_image(doc, scale_factor=0.8)
             b64_images.append(doc)
         else:
             texts.append(doc)
@@ -129,7 +131,7 @@ def img_prompt_func(data_dict):
                 "image_url": {"url": f"data:image/jpeg;base64,{image}"},
             }
             messages.append(image_message)
-
+    print(data_dict["question"])
     # Adding the text for analysis
     text_message = {
         "type": "text",
@@ -137,9 +139,11 @@ def img_prompt_func(data_dict):
             "You are an expert support assistant that works for Softeon Warehouse Management System\n"
             "You will be given a mixed of text, and image(s) usually of application screens.\n"
             "Use this information to provide information and support related to the user question. \n"
+            "If the input provided is of general nature, you will provide a general response.\n"
+            "DO NOT anser questions that are not related to the warehouse management system.\n"
             "If no information is available, you will excuse yourself.\n"
             "Please do not return the images as markdown, only your response.\n"
-            f"User-provided question: {data_dict['question']}\n\n"
+            f"`user-provided question`: {data_dict['question']}\n\n"
             "Text and / or tables:\n"
             f"{formatted_texts}"
         ),
@@ -151,17 +155,24 @@ def img_prompt_func(data_dict):
 def contextualize_chain():
 
     sys_message = """
+    ###Objective###
+    - Your primary objective is to simply modify the input information using the chat_history into a standalone form.
+
+    ###Rules###
     - Based on the `chat_history` and the `input`, contextualize the query to a standalone form.
     - If there's no `chat_history`, the `input` should be returned as is.
-    - Carefully consider how to best contextualize the query.
-    - Keep your answers brief and concise.
+    - Carefully consider how to best contextualize the query. Usually these are the following scenarios:
+        -- Input is a follow up which may not be understable on its own. So you will have to modify it to be a standalone query.
+        -- Input is not a follow up and can be understood on its own. In this case, you will return the input as is.
+        -- Input isn't a direct follow up but references something further back in the conversation. In this case, you will have to modify the input to be a standalone query.
+    - DO NOT answer the question
     """
 
     prompt = ChatPromptTemplate.from_messages(
         [
             ("system", sys_message),
             MessagesPlaceholder("chat_history"),
-            ("user", "input")
+            ("user", "{input}")
         ]
     )
 
@@ -208,17 +219,15 @@ def multi_modal_rag_chain(retriever):
     return chain
 
 
-if __name__ == "__main__":
-    chain_multimodal_rag = multi_modal_rag_chain(retriever)
-    response = chain_multimodal_rag.invoke(
-        {"input": "Give me an overview of the warehouse management system"},
-        config={"file_path": "data/chat_histories/sample_history.txt"}
-    )
-    print(response)
-    # output = retriever.invoke(
-    #     "Give me an overview of the warehouse management system")
+# if __name__ == "__main__":
+#     # chain_multimodal_rag = multi_modal_rag_chain(retriever)
+#     # response = chain_multimodal_rag.invoke(
+#     #     {"input": "Give me an overview of the warehouse management system"},
+#     #     config={"file_path": "data/chat_histories/sample_history.txt"}
+#     # )
+#     # print(response)
+#     documents = retriever.invoke("What can be found on the BOL type screen")
+#     print(len(documents))
+#     print(documents)
 
-    # for document in output:
-    #     print(num_tokens_from_string(pickle.loads(document)))
-    # Create RAG chain
-    # chain_multimodal_rag = multi_modal_rag_chain(retriever)
+chain_multimodal_rag = multi_modal_rag_chain(retriever)

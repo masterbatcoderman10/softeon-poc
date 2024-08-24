@@ -11,35 +11,10 @@ import uuid
 import os
 from dotenv import load_dotenv
 from .summarization import image_to_base64
+from utils.setup_retriever import retriever
 import pickle
 load_dotenv()
-
-
-CHROMA_PATH = "data/db/chroma"
-DOCSTORE_PATH = "data/db/docstore"
-
-os.makedirs(CHROMA_PATH, exist_ok=True)
-
-# chroma DB
-client = chromadb.PersistentClient(CHROMA_PATH)
-vector_store = Chroma(
-    client=client,
-    embedding_function=OpenAIEmbeddings(),
-    collection_name="softeon"
-)
-
-# document store
-docstore = LocalFileStore(DOCSTORE_PATH)
-# basically what the metadata key for the ID of the document will be called
 id_key = "doc_id"
-
-# multi vector retriever
-retriever = MultiVectorRetriever(
-    vectorstore=vector_store,
-    docstore=docstore,
-    id_key=id_key
-)
-
 # splitter
 splitter = RecursiveCharacterTextSplitter(chunk_size=400, chunk_overlap=25)
 
@@ -108,7 +83,7 @@ def get_images_n_summaries(img_dir, img_summary_dir):
     }
 
 
-def load_retriever(text_dir, img_dir, img_summary_dir):
+def load_retriever(retriever, text_dir, img_dir, img_summary_dir):
     text_data = get_text_docs(text_dir)
     img_data = get_images_n_summaries(img_dir, img_summary_dir)
 
@@ -121,7 +96,7 @@ def load_retriever(text_dir, img_dir, img_summary_dir):
     retriever.docstore.mset(list(zip(text_data["ids"], text_data["docs"])))
 
 
-if __name__ == "__main__":
-    load_retriever("data/processed_data/text", "data/processed_data/images",
-                   "data/processed_data/image_summaries")
-    print("Data loaded successfully")
+# if __name__ == "__main__":
+#     load_retriever("data/processed_data/text", "data/processed_data/images",
+#                    "data/processed_data/image_summaries")
+#     print("Data loaded successfully")

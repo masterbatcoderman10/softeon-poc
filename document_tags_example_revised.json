@@ -1,0 +1,87 @@
+{
+    "documents": [
+        {
+            "file_name": "SFTN_WMS_SecurityProfile-UserGuide",
+            "tags": [
+                "WMS",
+                "Administrative"
+            ]
+        },
+        {
+            "file_name": "SFTIN_WMS_AdhocMasterTemplate-UserGuide",
+            "tags": [
+                "WMS",
+                "User Interface"
+            ]
+        },
+        {
+            "file_name": "SFTIN_WMS_BatchPreference",
+            "tags": [
+                "WMS",
+                "Operational Processes",
+                "Automation"
+            ]
+        },
+        {
+            "file_name": "SFTIN_WMS_Account-UserGuide",
+            "tags": [
+                "WMS",
+                "Administrative"
+            ]
+        },
+        {
+            "file_name": "SFTIN_WMS_BOLType-UserGuide",
+            "tags": [
+                "WMS",
+                "Operational Processes",
+                "Outbound"
+            ]
+        },
+        {
+            "file_name": "SFTIN_WMS_AdhocUIObject-UserGuide",
+            "tags": [
+                "WMS",
+                "User Interface"
+            ]
+        },
+        {
+            "file_name": "SFTIN_WMS_AutoHoldInboundInspection-UserGuide",
+            "tags": [
+                "WMS",
+                "Operational Processes",
+                "Inbound",
+                "Automation"
+            ]
+        },
+        {
+            "file_name": "SFTIN_WMS_AdhocQueryParamSetup-UserGuide",
+            "tags": [
+                "WMS",
+                "User Interface"
+            ]
+        },
+        {
+            "file_name": "SFTIN_WMS_AutoLoadTruckBySPN-UserGuide",
+            "tags": [
+                "WMS",
+                "Operational Processes",
+                "Outbound",
+                "Automation"
+            ]
+        },
+        {
+            "file_name": "SFTIN_WMS_AdhocUIDefinition-UserGuide",
+            "tags": [
+                "WMS",
+                "User Interface"
+            ]
+        },
+        {
+            "file_name": "SFTIN_WMS_Address-UserGuide",
+            "tags": [
+                "WMS",
+                "Administrative"
+            ]
+        }
+    ]
+}

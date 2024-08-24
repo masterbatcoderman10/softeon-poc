@@ -17,12 +17,13 @@ CHROMA_PATH = "data/db/chroma"
 DOCSTORE_PATH = "data/db/docstore"
 
 os.makedirs(CHROMA_PATH, exist_ok=True)
+os.makedirs(DOCSTORE_PATH, exist_ok=True)
 
 # chroma DB
 client = chromadb.PersistentClient(CHROMA_PATH)
 vector_store = Chroma(
     client=client,
-    embedding_function=OpenAIEmbeddings(),
+    embedding_function=OpenAIEmbeddings(model="text-embedding-3-large"),
     collection_name="softeon"
 )
 
@@ -39,6 +40,5 @@ retriever = MultiVectorRetriever(
     search_type="similarity_score_threshold",
     search_kwargs={
         "k": 5,
-        "score_threshold": 0.5  # This sets the minimum similarity value
     }
 )
