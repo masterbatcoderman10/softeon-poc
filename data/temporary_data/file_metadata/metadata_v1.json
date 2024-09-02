@@ -1,0 +1,62 @@
+{
+  "SFTIN_WMS_Address-UserGuide.txt": {
+    "file_name": "SFTIN_WMS_Address-UserGuide.txt",
+    "tag_0": "User Interface",
+    "tag_1": "Operational Processes",
+    "tag_2": "Administrative"
+  },
+  "SFTIN_WMS_AdhocUIDefinition-UserGuide.txt": {
+    "file_name": "SFTIN_WMS_AdhocUIDefinition-UserGuide.txt",
+    "tag_0": "User Interface",
+    "tag_1": "Administrative"
+  },
+  "SFTIN_WMS_AutoLoadTruckBySPN-UserGuide.txt": {
+    "file_name": "SFTIN_WMS_AutoLoadTruckBySPN-UserGuide.txt",
+    "tag_0": "Operational Processes",
+    "tag_1": "Outbound"
+  },
+  "SFTIN_WMS_AdhocQueryParamSetup-UserGuide.txt": {
+    "file_name": "SFTIN_WMS_AdhocQueryParamSetup-UserGuide.txt",
+    "tag_0": "User Interface",
+    "tag_1": "Administrative",
+    "tag_2": "Operational Processes"
+  },
+  "SFTIN_WMS_AutoHoldInboundInspection-UserGuide.txt": {
+    "file_name": "SFTIN_WMS_AutoHoldInboundInspection-UserGuide.txt",
+    "tag_0": "Operational Processes",
+    "tag_1": "Automation",
+    "tag_2": "Inbound"
+  },
+  "SFTIN_WMS_AdhocUIObject-UserGuide.txt": {
+    "file_name": "SFTIN_WMS_AdhocUIObject-UserGuide.txt",
+    "tag_0": "User Interface",
+    "tag_1": "Operational Processes"
+  },
+  "SFTIN_WMS_BOLType-UserGuide.txt": {
+    "file_name": "SFTIN_WMS_BOLType-UserGuide.txt",
+    "tag_0": "Operational Processes",
+    "tag_1": "Outbound"
+  },
+  "SFTIN_WMS_Account-UserGuide.txt": {
+    "file_name": "SFTIN_WMS_Account-UserGuide.txt",
+    "tag_0": "Operational Processes",
+    "tag_1": "User Interface",
+    "tag_2": "Administrative"
+  },
+  "SFTIN_WMS_BatchPreference-UserGuide.txt": {
+    "file_name": "SFTIN_WMS_BatchPreference-UserGuide.txt",
+    "tag_0": "Operational Processes",
+    "tag_1": "Outbound"
+  },
+  "SFTIN_WMS_AdhocMasterTemplate-UserGuide.txt": {
+    "file_name": "SFTIN_WMS_AdhocMasterTemplate-UserGuide.txt",
+    "tag_0": "User Interface",
+    "tag_1": "Administrative"
+  },
+  "SFTN_WMS_SecurityProfile-UserGuide.txt": {
+    "file_name": "SFTN_WMS_SecurityProfile-UserGuide.txt",
+    "tag_0": "Administrative",
+    "tag_1": "User Interface",
+    "tag_2": "Operational Processes"
+  }
+}

@@ -7,16 +7,35 @@ from langchain_openai import OpenAIEmbeddings
 from langchain.retrievers.multi_vector import MultiVectorRetriever
 from langchain_community.document_loaders import TextLoader
 from langchain_core.documents import Document
+from langchain_openai import ChatOpenAI
+from langchain_core.output_parsers import StrOutputParser
+from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder, HumanMessagePromptTemplate, AIMessagePromptTemplate, StringPromptTemplate
+from langchain_core.chat_history import BaseChatMessageHistory
+from langchain_core.messages import AIMessage, HumanMessage, SystemMessage
+from langchain_core.pydantic_v1 import BaseModel, Field
+from langchain_core.runnables import RunnableWithMessageHistory, RunnableLambda
+from langchain.tools import BaseTool, StructuredTool, tool
+from langchain_core.runnables import RunnableWithMessageHistory, ConfigurableFieldSpec
 import uuid
 import os
 from dotenv import load_dotenv
 from .summarization import image_to_base64
 from utils.setup_retriever import retriever
+from utils.setup_retriever import self_query_retriever
 import pickle
+import json
 load_dotenv()
 id_key = "doc_id"
 # splitter
 splitter = RecursiveCharacterTextSplitter(chunk_size=400, chunk_overlap=25)
+llm = ChatOpenAI(model="gpt-3.5-turbo")
+
+
+class TaggingSchema(BaseModel):
+    explanation: str = Field(..., title="Explanation",
+                             description="Detailed reasoning for the possible tags that fit the text content")
+    tags: list[str] = Field(..., title="Tags",
+                            description="Tags that are appropriate for the text content")
 
 
 def get_text_docs(dir_path):
@@ -96,7 +115,114 @@ def load_retriever(retriever, text_dir, img_dir, img_summary_dir):
     retriever.docstore.mset(list(zip(text_data["ids"], text_data["docs"])))
 
 
-# if __name__ == "__main__":
-#     load_retriever("data/processed_data/text", "data/processed_data/images",
-#                    "data/processed_data/image_summaries")
-#     print("Data loaded successfully")
+def produce_tags(text_content):
+
+    tagging_prompt = """
+    ###Objective###
+    - Based on the text_content provide and appropriate tag for the text.
+
+    ###Rules###
+    - Select as many tags as you think are appropriate for the text.
+
+    ###Tags###
+    **WMS**
+    - **Description**: Refers to documents related to the Warehouse Management System (WMS), including setup, configuration, and operational guidance specific to warehouse management processes.
+
+    **Administrative**
+    - **Description**: Covers documents focused on administrative tasks such as system configuration, user management, account management, and other setup-related activities within the WMS.
+
+    **User Interface**
+    - **Description**: Includes guides and documentation related to the customization, configuration, and design of the user interface within the WMS, focusing on UI objects, templates, and screen layouts.
+
+    **Operational Processes**
+    - **Description**: Pertains to documents that outline various operational tasks within the WMS, such as batch management, inbound and outbound logistics, and daily warehouse activities.
+
+    **Automation**
+    - **Description**: Refers to guides detailing automated processes within the WMS, including features that enhance efficiency by reducing manual intervention, such as auto-loading trucks and automated inbound inspections.
+
+    **Inbound**
+    - **Description**: Focuses on documentation related to inbound logistics processes, including the receiving, inspection, and handling of goods as they enter the warehouse.
+
+    **Outbound**
+    - **Description**: Covers documents related to outbound logistics processes, such as picking, packing, and shipping goods from the warehouse, as well as related operational tasks.
+
+    **Integration**
+    - **Description**: Documentation that deals with the integration of the WMS with other systems or processes, ensuring seamless operation and data flow across different platforms.
+
+    **Compliance**
+    - **Description**: Documentation that addresses regulatory or compliance-related requirements within the logistics and warehouse management processes, ensuring adherence to industry standards.### **WMS**
+
+    `text_content`: {text_content}
+    """
+
+    tagging_prompt = ChatPromptTemplate.from_template(tagging_prompt)
+
+    structured_llm = llm.with_structured_output(TaggingSchema)
+    tagging_chain = tagging_prompt | structured_llm
+
+    # print(f"Processing {text_content}")
+    outputs = tagging_chain.invoke({"text_content": text_content})
+    return outputs.dict()["tags"]
+
+
+def tag_documents(data_dir, output_dir):
+
+    texts = {}
+    processed_texts = {}
+
+    for file in os.listdir(data_dir):
+        with open(os.path.join(data_dir, file), "r") as f:
+            texts[file] = f.read()
+
+    for file, text in texts.items():
+        tags = produce_tags(text)
+        processed_texts[file] = {
+            "file_name": file,
+        }
+        for i, tag in enumerate(tags):
+            processed_texts[file][f"tag_{i}"] = tag
+    
+    os.makedirs(output_dir, exist_ok=True)
+    # save json file
+    with open(os.path.join(output_dir, "metadata_v1.json"), "w") as f:
+        json.dump(processed_texts, f)
+
+def create_documents_and_load(text_dir, metadata_file_path):
+
+    with open(metadata_file_path, "r") as f:
+        metadata = json.load(f)
+
+    text_docs = {}
+
+    for key, value in metadata.items():
+        with open(os.path.join(text_dir, value["file_name"]), "r") as f:
+            text = f.read()
+            text_docs[key] = text
+
+    documents = []
+    # metadata = {}
+
+    # for key, value in metadata.items():
+    #     metadata[key] = {
+    #         "file_name": value["file_name"],
+    #     }
+    #     for i, tag in enumerate(value["tags"]):
+    #         metadata[key][f"tag_{i}"] = tag
+
+    for key, text in text_docs.items():
+        doc = Document(
+            page_content=text,
+            metadata=metadata[key]
+        )
+        documents.append(doc)
+
+    self_query_retriever.vectorstore.add_documents(documents)
+
+
+
+if __name__ == "__main__":
+    # load_retriever("data/processed_data/text", "data/processed_data/images",
+    #                "data/processed_data/image_summaries")
+    # print("Data loaded successfully")
+    tag_documents("data/temporary_data/text", "data/temporary_data/file_metadata")
+    # create_documents_and_load("data/temporary_data/text", "data/temporary_data/file_metadata/metadata_v1.json")

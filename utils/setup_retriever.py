@@ -1,4 +1,7 @@
 # this file will be used to load the data from the processed_data directory into the chroma database
+from langchain_openai import ChatOpenAI
+from langchain.retrievers.self_query.base import SelfQueryRetriever
+from langchain.chains.query_constructor.base import AttributeInfo
 import chromadb
 from langchain_chroma import Chroma
 from langchain.storage import LocalFileStore
@@ -41,4 +44,70 @@ retriever = MultiVectorRetriever(
     search_kwargs={
         "k": 5,
     }
+)
+
+### Setup the self-query retriever
+self_query_store = Chroma(
+    client=client,
+    embedding_function=OpenAIEmbeddings(model="text-embedding-3-large"),
+    collection_name="softeon_metadata"
+)
+
+metadata_field_info = [
+    AttributeInfo(
+        name="file_name",
+        description="The name of the file. You must only use this attribute if the filename is mentioned fully by the user in the query.",
+        type="string",
+    ),
+    AttributeInfo(
+        name="tag_0",
+        description="The first tag of the document.",
+        type="string",
+    ),
+    AttributeInfo(
+        name="tag_0",
+        description="The first tag of the document.",
+        type="string",
+    ),
+    AttributeInfo(
+        name="tag_0",
+        description="The first tag of the document.",
+        type="string",
+    ),
+    AttributeInfo(
+        name="tag_0",
+        description="The first tag of the document.",
+        type="string",
+    ),
+    AttributeInfo(
+        name="tag_0",
+        description="The first tag of the document.",
+        type="string",
+    ),
+    AttributeInfo(
+        name="tag_0",
+        description="The first tag of the document.",
+        type="string",
+    ),
+    AttributeInfo(
+        name="tag_0",
+        description="The first tag of the document.",
+        type="string",
+    ),
+    AttributeInfo(
+        name="tag_0",
+        description="The first tag of the document.",
+        type="string",
+    ),
+]
+
+document_content_description = "The documents contain information about a warehouse management system called Softeon."
+
+llm = ChatOpenAI(model="gpt-4o-2024-08-06")
+
+self_query_retriever = SelfQueryRetriever.from_llm(
+    llm=llm,
+    vectorstore=self_query_store,
+    document_contents=document_content_description,
+    metadata_field_info=metadata_field_info
 )
