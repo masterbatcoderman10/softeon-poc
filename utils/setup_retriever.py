@@ -60,43 +60,8 @@ metadata_field_info = [
         type="string",
     ),
     AttributeInfo(
-        name="tag_0",
-        description="The first tag of the document.",
-        type="string",
-    ),
-    AttributeInfo(
-        name="tag_0",
-        description="The first tag of the document.",
-        type="string",
-    ),
-    AttributeInfo(
-        name="tag_0",
-        description="The first tag of the document.",
-        type="string",
-    ),
-    AttributeInfo(
-        name="tag_0",
-        description="The first tag of the document.",
-        type="string",
-    ),
-    AttributeInfo(
-        name="tag_0",
-        description="The first tag of the document.",
-        type="string",
-    ),
-    AttributeInfo(
-        name="tag_0",
-        description="The first tag of the document.",
-        type="string",
-    ),
-    AttributeInfo(
-        name="tag_0",
-        description="The first tag of the document.",
-        type="string",
-    ),
-    AttributeInfo(
-        name="tag_0",
-        description="The first tag of the document.",
+        name="tag",
+        description="The tag that is most appropriate for the text content. Please use the tags exactly as shown. One of the following: [WMS, Administrative, User Interface, Operational Processes, Automation, Inbound, Outbound, Integration, Compliance]",
         type="string",
     ),
 ]

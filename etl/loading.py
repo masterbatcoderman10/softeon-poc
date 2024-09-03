@@ -34,8 +34,8 @@ llm = ChatOpenAI(model="gpt-3.5-turbo")
 class TaggingSchema(BaseModel):
     explanation: str = Field(..., title="Explanation",
                              description="Detailed reasoning for the possible tags that fit the text content")
-    tags: list[str] = Field(..., title="Tags",
-                            description="Tags that are appropriate for the text content")
+    tag: str = Field(..., title="Tag",
+                            description="The tag that is most appropriate for the text content")
 
 
 def get_text_docs(dir_path):
@@ -122,7 +122,7 @@ def produce_tags(text_content):
     - Based on the text_content provide and appropriate tag for the text.
 
     ###Rules###
-    - Select as many tags as you think are appropriate for the text.
+    - Select the most appropriate one based on the text content.
 
     ###Tags###
     **WMS**
@@ -162,7 +162,7 @@ def produce_tags(text_content):
 
     # print(f"Processing {text_content}")
     outputs = tagging_chain.invoke({"text_content": text_content})
-    return outputs.dict()["tags"]
+    return outputs.dict()["tag"]
 
 
 def tag_documents(data_dir, output_dir):
@@ -175,12 +175,11 @@ def tag_documents(data_dir, output_dir):
             texts[file] = f.read()
 
     for file, text in texts.items():
-        tags = produce_tags(text)
+        tag = produce_tags(text)
         processed_texts[file] = {
             "file_name": file,
+            "tag" : tag
         }
-        for i, tag in enumerate(tags):
-            processed_texts[file][f"tag_{i}"] = tag
     
     os.makedirs(output_dir, exist_ok=True)
     # save json file
@@ -200,14 +199,6 @@ def create_documents_and_load(text_dir, metadata_file_path):
             text_docs[key] = text
 
     documents = []
-    # metadata = {}
-
-    # for key, value in metadata.items():
-    #     metadata[key] = {
-    #         "file_name": value["file_name"],
-    #     }
-    #     for i, tag in enumerate(value["tags"]):
-    #         metadata[key][f"tag_{i}"] = tag
 
     for key, text in text_docs.items():
         doc = Document(
@@ -225,4 +216,4 @@ if __name__ == "__main__":
     #                "data/processed_data/image_summaries")
     # print("Data loaded successfully")
     tag_documents("data/temporary_data/text", "data/temporary_data/file_metadata")
-    # create_documents_and_load("data/temporary_data/text", "data/temporary_data/file_metadata/metadata_v1.json")
+    create_documents_and_load("data/temporary_data/text", "data/temporary_data/file_metadata/metadata_v1.json")
