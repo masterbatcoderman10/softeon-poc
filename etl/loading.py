@@ -24,6 +24,7 @@ from utils.setup_retriever import retriever
 from utils.setup_retriever import self_query_retriever
 import pickle
 import json
+import re
 load_dotenv()
 id_key = "doc_id"
 # splitter
@@ -165,7 +166,40 @@ def produce_tags(text_content):
     return outputs.dict()["tag"]
 
 
-def tag_documents(data_dir, output_dir):
+def tag_image_summaries(img_summary_dir):
+    img_summaries = {}
+    processed_texts = {}
+    i = 0
+    for file in os.listdir(img_summary_dir):
+        with open(os.path.join(img_summary_dir, file), "r") as f:
+            img_summaries[file] = f.read()
+
+    for file, text in img_summaries.items():
+        og_file = file
+        tag = produce_tags(text)
+        # process file name by removing the occurrence of .png from file name
+        file = file.replace(".png", "")
+        # get page number and image number which is present in the file name as page_n image_n
+        page_number = int(re.search(r"page_(\d+)", file).group(1))
+        image_number = int(re.search(r"image_(\d+)", file).group(1))
+        # now sub the occurrence of page_n and image_n from the file name
+        file = file.replace(
+            f"_page_{page_number}_image_{image_number}", "")
+        processed_texts[og_file] = {
+            "file_name": file,
+            "tag": tag,
+            "file_type": "image",
+            "page_number": page_number,
+            "image_number": image_number
+        }
+        i += 1
+        print(f"Processed {i} image summaries of {len(img_summaries)}")
+        #clear output
+    return processed_texts
+    
+        
+
+def tag_documents(data_dir, output_dir, img_summary_dir=None):
 
     texts = {}
     processed_texts = {}
@@ -178,35 +212,45 @@ def tag_documents(data_dir, output_dir):
         tag = produce_tags(text)
         processed_texts[file] = {
             "file_name": file,
-            "tag" : tag
+            "tag" : tag,
+            "file_type": "text"
         }
-    
+    print(f"There are {len(processed_texts)} documents to be tagged.")
+    if img_summary_dir:
+        processed_image_summaries = tag_image_summaries(img_summary_dir)
+        processed_texts.update(processed_image_summaries)
     os.makedirs(output_dir, exist_ok=True)
     # save json file
     with open(os.path.join(output_dir, "metadata_v1.json"), "w") as f:
         json.dump(processed_texts, f)
 
-def create_documents_and_load(text_dir, metadata_file_path):
+def create_documents_and_load(text_dir, metadata_file_path, img_summary_dir=None):
 
     with open(metadata_file_path, "r") as f:
         metadata = json.load(f)
 
-    text_docs = {}
-
-    for key, value in metadata.items():
-        with open(os.path.join(text_dir, value["file_name"]), "r") as f:
-            text = f.read()
-            text_docs[key] = text
-
     documents = []
 
-    for key, text in text_docs.items():
+    for _, metadata_fields in metadata.items():
+        if metadata_fields["file_type"] == "text":
+            with open(os.path.join(text_dir, metadata_fields["file_name"]), "r") as f:
+                text = f.read()
+        elif metadata_fields["file_type"] == "image" and img_summary_dir:
+            file_name = metadata_fields["file_name"]
+            #remov .txt 
+            file_name = file_name.replace(".txt", "")
+            page_number = metadata_fields["page_number"]
+            image_number = metadata_fields["image_number"]
+            processed_file_name = f"{file_name}_page_{page_number}_image_{image_number}.png.txt"
+            with open(os.path.join(img_summary_dir, processed_file_name), "r") as f:
+                text = f.read()
+            
         doc = Document(
             page_content=text,
-            metadata=metadata[key]
+            metadata=metadata_fields
         )
-        documents.append(doc)
 
+        documents.append(doc)
     self_query_retriever.vectorstore.add_documents(documents)
 
 
@@ -215,5 +259,5 @@ if __name__ == "__main__":
     # load_retriever("data/processed_data/text", "data/processed_data/images",
     #                "data/processed_data/image_summaries")
     # print("Data loaded successfully")
-    tag_documents("data/temporary_data/text", "data/temporary_data/file_metadata")
-    create_documents_and_load("data/temporary_data/text", "data/temporary_data/file_metadata/metadata_v1.json")
+    tag_documents("data/temporary_data/text", "data/temporary_data/file_metadata", "data/temporary_data/image_summaries")
+    create_documents_and_load("data/temporary_data/text", "data/temporary_data/file_metadata/metadata_v1.json", img_summary_dir="data/temporary_data/image_summaries")

@@ -29,7 +29,7 @@ def run_etl_pipeline():
     text_dir = f"{processed_data_dir}/text"
 
     # load the retriever
-    load_retriever(retriever, text_dir, images_dir, image_summaries_dir)
+    # load_retriever(retriever, text_dir, images_dir, image_summaries_dir)
 
     # alternate
     tag_documents(text_dir, metadata_dir)

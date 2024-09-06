@@ -19,7 +19,7 @@ from langchain_core.messages import AIMessage, HumanMessage, SystemMessage
 from langchain_core.pydantic_v1 import BaseModel, Field
 from langchain_core.runnables import RunnableWithMessageHistory, RunnableLambda
 from langchain.tools import BaseTool, StructuredTool, tool
-from .setup_retriever import retriever
+from .setup_retriever import retriever, self_query_retriever
 from langchain_core.runnables import RunnableWithMessageHistory, ConfigurableFieldSpec
 import base64
 load_dotenv()
@@ -115,6 +115,41 @@ def split_image_text_types(docs):
             texts.append(doc)
     return {"images": b64_images, "texts": texts}
 
+def extract_text_content(docs):
+    """
+    Extract text content from the documents
+    """
+    texts = []
+    for doc in docs:
+        # Check if the document is of type Document and extract page_content if so
+        if isinstance(doc, Document):
+            doc = doc.page_content
+        texts.append(doc)
+
+    return texts
+
+def process_prompt(data_dict):
+    """
+    Process the prompt for the model
+    """
+
+    message = HumanMessage(content=f"""
+    ###Objective###
+    - You are an expert support assistant that works for Softeon Warehouse Management System
+    - You will be provided with text content and your objective is to answer the `question` based on the information provided.
+
+    ###Rules###
+    - Use this information to provide information and support related to the user question.
+    - If the input provided is of general nature, you will provide a general response.
+    - DO NOT anser questions that are not related to the warehouse management system.
+    - If no information is available, you will excuse yourself.
+
+    ###Input###
+    `content`: {data_dict["context"]}
+    `question`: {data_dict["question"]}
+    """)
+
+    return [message]
 
 def img_prompt_func(data_dict):
     """
@@ -188,15 +223,27 @@ def multi_modal_rag_chain(retriever):
 
     contextual_chain = contextualize_chain()
 
-    # RAG pipeline
+    # Multi-Modal RAG pipeline
+    # rag_chain = (
+    #     contextual_chain
+    #     |
+    #     {
+    #         "context": retriever | RunnableLambda(split_image_text_types),
+    #         "question": RunnablePassthrough(),
+    #     }
+    #     | RunnableLambda(img_prompt_func)
+    #     | model
+    # )
+
+    # Self-Query RAG chain
     rag_chain = (
         contextual_chain
         |
         {
-            "context": retriever | RunnableLambda(split_image_text_types),
+            "context": self_query_retriever | RunnableLambda(extract_text_content),
             "question": RunnablePassthrough(),
         }
-        | RunnableLambda(img_prompt_func)
+        | RunnableLambda(process_prompt)
         | model
     )
 

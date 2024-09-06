@@ -50,7 +50,7 @@ retriever = MultiVectorRetriever(
 self_query_store = Chroma(
     client=client,
     embedding_function=OpenAIEmbeddings(model="text-embedding-3-large"),
-    collection_name="softeon_metadata"
+    collection_name="softeon_metadata_v3"
 )
 
 metadata_field_info = [
@@ -64,6 +64,21 @@ metadata_field_info = [
         description="The tag that is most appropriate for the text content. Please use the tags exactly as shown. One of the following: [WMS, Administrative, User Interface, Operational Processes, Automation, Inbound, Outbound, Integration, Compliance]",
         type="string",
     ),
+    AttributeInfo(
+        name="file_type",
+        description="The type of the file. One of the following: [text, image]. `image` refers to the screens of the application. Use `image` filtering only when the query is asking about a screen of the application or related, in other cases use `text`.",
+        type="string",
+    ),
+    AttributeInfo(
+        name="page_number",
+        description="The page number of the document. Please use this attribute only if the page number is mentioned in the query.",
+        type="int",
+    ),
+    AttributeInfo(
+        name="image_number",
+        description="The image number of the document. Please use this attribute only if the image number is mentioned in the query and only for image `file_type`.",
+        type="int",
+    ),
 ]
 
 document_content_description = "The documents contain information about a warehouse management system called Softeon."
@@ -74,5 +89,5 @@ self_query_retriever = SelfQueryRetriever.from_llm(
     llm=llm,
     vectorstore=self_query_store,
     document_contents=document_content_description,
-    metadata_field_info=metadata_field_info
+    metadata_field_info=metadata_field_info,
 )
