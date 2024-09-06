@@ -7,4 +7,5 @@ __pycache__/
 *.jpeg
 *.png
 *.txt
-data/db/
+# data/db/
+data/processed_files/*
