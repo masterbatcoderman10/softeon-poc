@@ -1,0 +1,41 @@
+The image is a screenshot of a software interface named "Security Profile" from Softeon. This particular screen is focused on "User Access Map" functionality, which appears to manage user permissions and access mapping within the application.
+
+### Key Components:
+
+1. **Header and Navigation:**
+   - The top-left corner has the Softeon logo and the title "Security Profile".
+   - Navigation tabs include "User", "Group", "Advanced User Map", "Module Map", "User Access Map", and "Menu Access", with "User Access Map" currently selected.
+
+2. **Search Criteria Section:**
+   - Fields for filtering data include:
+     - Organization (ORG1)
+     - Warehouse (WH1)
+     - App ID (WMS)
+     - User Group (ADM)
+     - User ID (empty)
+     - Business Unit (empty)
+     - Bldg ID (empty)
+   - Buttons available for executing actions: "Submit", "Reset", "Find", "Refresh", and "Copy".
+
+3. **Filter and Button Section:**
+   - The interface includes dropdown menus and text input fields to specify search criteria.
+   - The "Find" button is highlighted, indicating it might have been used to generate the current list.
+
+4. **Results Table:**
+   - Columns in the table include App ID, Warehouse ID, Bldg ID, and Business Unit.
+   - The table displays the results of the current search criteria.
+   - Each row in the table represents a different mapping of App ID (WMS) with corresponding Warehouse ID (WH1), Bldg ID, and Business Unit.
+   - Checkboxes in the first column indicate whether the combination is selected or not.
+   - Green check marks indicate mapped buildings and business units, while red check marks indicate unmapped buildings and business units.
+
+5. **Highlighted Areas:**
+   - Certain fields, buttons, and labels are outlined in red for emphasis.
+   - Text box annotations highlight the "Mapped Building and Business Unit" and "Unmapped Building and Business Unit".
+
+6. **Miscellaneous:**
+   - There is a search menu bar at the top right.
+   - Common icons for help, notifications, and user settings are present in the top-right corner.
+   - A scrollbar indicates more entries are present below the visible table rows.
+
+### Summary:
+The screen is part of a user access management module within Softeon's security profile. It allows users to search, view, and manage mappings of application IDs, warehouse IDs, building IDs, and business units. The interface is designed to filter and display specific access mappings, and users can interact with the data using various action buttons and checkboxes.

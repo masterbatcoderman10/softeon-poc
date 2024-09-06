@@ -1,0 +1,92 @@
+SOFTEON, INC. 
+11700 Plaza America Dr., Suite 910 
+Reston, Virginia USA 20190 
+Tel 703-793-0005 
+WWW.SOFTEON.COM 
+ 
+ 
+ 
+ADHOC QUERY PARAM SETUP 
+User Guide 
+ 
+ 
+ 
+ 
+User Guide 
+2 
+Adhoc Query Param Setup 
+Contents 
+Conventions Used ................................................................................................................... 3 
+1. Overview 
+............................................................................................................................... 4 
+2. Pre-requisites ....................................................................................................................... 4 
+3. Defining Parameters ............................................................................................................ 4 
+ 
+ 
+ 
+ 
+ 
+User Guide 
+3 
+Adhoc Query Param Setup 
+Conventions Used 
+This section interprets the various conventions used in the document for better understanding of the 
+screen functionality. 
+Convention 
+Usage 
+ 
+Denotes the mandatory fields in the screen. Values need to be specified in 
+the fields in order to proceed with the screen operations. 
+ 
+Denotes the fields that show values retrieved from the system. 
+ 
+Any subject content encapsulated in a section marked by this icon indicates 
+that the given information will serve as a useful tip for the end users. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+User Guide 
+4 
+Adhoc Query Param Setup 
+1. Overview 
+You can use the Adhoc Query Param Setup screen for defining the parameters used in an Adhoc query 
+and its attributes such as the sequence in which it is used in the Query, the Object that represents the 
+parameter in the UI, whether the parameter is mandatory or not. 
+Menu Access: ADM – Utility > Adhoc Setup > Adhoc Query Param Setup 
+2. Pre-requisites 
+• 
+Object ID must be created and mapped with Definition ID 
+3. Defining Parameters 
+Mandatory Values 
+1) Specify the Query ID to which the parameter belongs. 
+2) Specify/select the UI Definition ID. 
+3) Specify/select the Object ID. 
+4) Specify the Seq No (Sequence Number), the numerical order of the input parameter available in 
+the query.  
+5) Specify the expression in SQL Placeholder Expr. 
+6) Specify the Condition/ value in SQL Placeholder Value when the expression is executed in the 
+SQL. 
+The system will display the result of the condition (SQL Placeholder Value) in the grid when the 
+expression (SQL Placeholder Expr) is executed in the SQL. 
+ 
+Figure 1 – Adhoc Query Param Setup screen 
+Optional Values 
+7) Specify the Param Caption, the caption for the control to be displayed in the Adhoc Query GUI. 
+8) Specify the Default Value to be displayed in the control(s) on form load of the screen. 
+9) Select the Mandatory Flag check box, to indicate the Query contains SQL operator. The Query 
+that has only LIKE clause need not be mandatory. 
+ 
+ 
+ 
+ 
+User Guide 
+5 
+Adhoc Query Param Setup 
+On Submitting, the system displays the records in the grid. 
+ 
+Figure 2 – Adhoc Query Param Setup screen – with records 
+

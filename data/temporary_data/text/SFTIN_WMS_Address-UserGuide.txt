@@ -1,0 +1,126 @@
+SOFTEON, INC. 
+11700 Plaza America Dr., Suite 910 
+Reston, Virginia USA 20190 
+Tel 703-793-0005 
+WWW.SOFTEON.COM 
+ 
+ 
+ 
+ADDRESS 
+User Guide 
+ 
+ 
+ 
+ 
+User Guide 
+2 
+Address 
+Contents 
+Conventions Used ................................................................................................................... 3 
+1. Overview 
+............................................................................................................................... 4 
+2. Pre-requisites ....................................................................................................................... 4 
+3. Creating Address details ..................................................................................................... 4 
+3.1. Copying the existing Address details ................................................................................................. 5 
+ 
+ 
+ 
+ 
+ 
+User Guide 
+3 
+Address 
+Conventions Used 
+This section interprets the various conventions used in the document for better understanding of the 
+screen functionality. 
+Convention 
+Usage 
+ 
+Denotes the mandatory fields in the screen. Values need to be specified in 
+the fields in order to proceed with the screen operations. 
+ 
+Denotes the fields that show values retrieved from the system. 
+ 
+Any subject content encapsulated in a section marked by this icon indicates 
+that the given information will serve as a useful tip for the end users. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+User Guide 
+4 
+Address 
+1. Overview 
+You can use the Address screen for creating/editing address of Business Unit, Customer, Supplier or 
+Warehouse for warehouse level communications like issuing Purchase Order, Sending BOL and so on. 
+2. Pre-requisites 
+• Country, State and Zip codes must be already defined. 
+3. Creating Address details 
+Menu Access: Masters > Outbound > Set up > Address 
+ 
+Do not specify any values in Address ID. Address ID will be automatically generated on 
+submitting a new address. 
+Mandatory Values 
+1) Specify the Name of the person to whom to address the document. 
+2) Specify the Address. 
+Optional Values 
+3) Specify the Attn Line to be displayed above the recipient line. 
+4) Specify/select the Country Code. 
+5) Specify the name of the City and State details. 
+ 
+State is mandatory when Country Code is 'USA'. 
+6) Specify/select the Zip code in Zip. 
+ 
+Zip is mandatory when Country is 'USA' 
+7) Specify the Extn of the zip code. 
+The system displays the Geo Code (Geographical Code - a unique code used for identifying 
+geographical location of the address specified) based on the details provided. 
+8) Specify the Work Phone No, Extn, Home Ph, Fax No, E-Mail 1, and E-Mail 2. 
+9) Specify the additional information in Ref Field1, Ref Field2 and Ref Field3, if required. 
+10) Select the Create as New Address check box to indicate that the specified address is a new 
+address. 
+ 
+ 
+ 
+ 
+User Guide 
+5 
+Address 
+ 
+Figure 1 — Address screen 
+On Submitting, the system displays the address with the new Address ID in grid. 
+ 
+Figure 2 — Address screen — with record 
+3.1.  Copying the existing Address details 
+1) Specify Address ID, Address Name, Address Line 1, City, State, and/or Zip details in the 
+Address Find bar. 
+ 
+Figure 3 – Address screen – Address Find Bar 
+On clicking Go, the system displays the Copy Information pop-up screen. 
+ 
+ 
+Figure 4 – Address screen – Address Selection  
+ 
+ 
+ 
+ 
+User Guide 
+6 
+Address 
+ 
+• 
+Select the ‘Select the Same Address Id’ check box to modify the existing 
+address. 
+• 
+Clear the check box to create the selected address as a new Address. 
+2) Select the Address from the grid. 
+The system populates the details of the selected Address in the corresponding controls. 
+On Submitting, the system displays the specified details in the grid. 
+

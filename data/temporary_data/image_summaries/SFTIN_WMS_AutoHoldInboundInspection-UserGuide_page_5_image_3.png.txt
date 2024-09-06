@@ -1,0 +1,36 @@
+The image shows a screenshot of an "Auto Hold/Inbound Inspection" interface from Softeon, a logistics and supply chain software solution. 
+
+### Header Section:
+- **Logo and Title:** The top-left corner has the Softeon logo with the tagline "LIMITLESS DELIVERED" and the title "Auto Hold/Inbound Inspection".
+- **User Interface Buttons:** On the top-right, there are icons for search, refresh, notifications, help, and user account (SFTADMIN).
+
+### Main Section:
+- **LPN:** A field labeled "LPN" with the value "2019071104".
+- **Vendor Information:** The vendor code "1003" is listed twice.
+- **SKU Information:** The SKU fields show two values: "B01261" and "BIG RED ICON 13586".
+- **Quantities:**
+  - **Rcvd Qty:** 9999
+  - **On Hand Qty:** 9999
+- **Release Hold(s):** A checkbox labeled "Pallet Hold for insp" is checked, and there is an input field for "Release Code".
+
+### Action Buttons:
+- **Submit:** Highlighted with a red border.
+- **Release, Sampling, Reset, Refresh:** Additional options available for user actions.
+
+### Inspection Level:
+- **INSPECT (4):** Indicated in the bottom-left corner.
+
+### Questions and Answers Section:
+- **Questions:**
+  1. Are the micropaks verified as genuine?
+  2. Are all SKUs and quantities accurate?
+  3. Are there any damages?
+  4. Are there any flaws?
+- **Answers:** Each question has radio button options for "Yes" and "No".
+  - For all four questions, the "No" option is selected.
+
+### Verification Section:
+- **Last Verified By:** Empty fields.
+- **Last Verified Time:** Empty fields.
+
+This interface is likely used for verifying the authenticity, accuracy, and condition of inbound inventory before it is released into the warehouse management system.

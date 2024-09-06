@@ -1,0 +1,91 @@
+SOFTEON, INC. 
+11700 Plaza America Dr., Suite 910 
+Reston, Virginia USA 20190 
+Tel 703-793-0005 
+WWW.SOFTEON.COM 
+ 
+ 
+ 
+ADHOC UI OBJECT 
+User Guide 
+ 
+ 
+ 
+ 
+User Guide 
+2 
+Adhoc UI Object 
+Contents 
+Conventions Used ................................................................................................................... 3 
+1. Overview 
+............................................................................................................................... 4 
+2. Defining UI Object ................................................................................................................ 4 
+ 
+ 
+ 
+ 
+ 
+User Guide 
+3 
+Adhoc UI Object 
+Conventions Used 
+This section interprets the various conventions used in the document for better understanding of the 
+screen functionality. 
+Convention 
+Usage 
+ 
+Denotes the mandatory fields in the screen. Values need to be specified in 
+the fields in order to proceed with the screen operations. 
+ 
+Denotes the fields that show values retrieved from the system. 
+ 
+Any subject content encapsulated in a section marked by this icon indicates 
+that the given information will serve as a useful tip for the end users. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+User Guide 
+4 
+Adhoc UI Object 
+1. Overview 
+To build an Ad hoc Query interface, the user should build GUI Objects that are needed to setup and to 
+gather user inputs. A GUI object can be either a component or a container that holds a set of 
+components. List of supported GUI Components are Text Box, List Box, AJAX Popup (popup with ID & 
+Description) and Date Calendar. 
+You can use the Adhoc UI Object screen is used for defining the GUI objects that are likely to be used in 
+an Adhoc Master Template interface. 
+Menu Access: ADM – Utility > Adhoc Setup > Adhoc UI Object 
+2. Defining UI Object  
+Mandatory Values 
+The system displays the Warehouse ID, by default. 
+1) Specify a unique id in Object ID.  
+ 
+Figure 1 – Adhoc UI Object screen 
+Optional Values 
+2) Select the UI Type from the list to specify what component the object will hold. 
+ 
+To specify the object is a container, do not select any UI Type from the list. 
+3) Select the Data Type from the list. 
+4) Specify the Object Length to define the size of text box or the width of drop-down list box. 
+5) Specify the Container ID in which the current object will be placed.  
+6) Specify Max Length, the maximum number of characters that the system can allow the user to 
+enter in the text box control. 
+7) Specify the Min Length, to mandate the user to enter at least the minimum number of character 
+given. 
+8) Select the Container Flag check box to specify that the current object is a container. 
+9) Specify the SQL in Data Source text box to retrieve data for the UI Types. 
+ 
+ 
+ 
+ 
+User Guide 
+5 
+Adhoc UI Object 
+On Submitting, the system displays the Object details in the grid. 
+ 
+Figure 2 – Adhoc UI Object screen – with record 
+

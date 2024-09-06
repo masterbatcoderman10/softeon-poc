@@ -1,0 +1,139 @@
+SOFTEON, INC. 
+11700 Plaza America Dr., Suite 910 
+Reston, Virginia USA 20190 
+Tel 703-793-0005 
+WWW.SOFTEON.COM 
+ 
+ 
+ 
+AUTO HOLD / INBOUND INSPECTION 
+User Guide 
+ 
+ 
+ 
+ 
+User Guide 
+2 
+Auto Hold / Inbound Inspection 
+Contents 
+Conventions Used ................................................................................................................... 3 
+1. Overview 
+............................................................................................................................... 4 
+2. Pre-requisites ....................................................................................................................... 4 
+3. Releasing Hold LPNs ........................................................................................................... 4 
+3.1. To perform LPN Split .......................................................................................................................... 6 
+4. What’s Next? ........................................................................................................................ 7 
+ 
+ 
+ 
+ 
+ 
+User Guide 
+3 
+Auto Hold / Inbound Inspection 
+Conventions Used 
+This section interprets the various conventions used in the document for better understanding of the 
+screen functionality. 
+Convention 
+Usage 
+ 
+Denotes the mandatory fields in the screen. Values need to be specified in 
+the fields in order to proceed with the screen operations. 
+ 
+Denotes the fields that show values retrieved from the system. 
+ 
+Any subject content encapsulated in a section marked by this icon indicates 
+that the given information will serve as a useful tip for the end users. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+User Guide 
+4 
+Auto Hold / Inbound Inspection 
+1. Overview 
+You can use the Inbound Inspection screen for releasing the LPNs that are hold for Inbound QC. 
+Menu Access: Operations > Inbound > Receiving > Auto Hold / Inbound Inspection 
+2. Pre-requisites 
+• 
+Inbound Inspection related setups must be defined in Inbound Inspection (Masters > Inbound > 
+Inbound Inspection) screen. 
+3. Releasing Hold LPNs 
+1) Specify/select the LPN that is held during Inbound Inspection. 
+On selecting, the system displays the Vendor, SKU, Rcvd Qty (Received Quantity) and On 
+Hand Qty of the selected LPN. The system also displays the Inspection Level categories and the 
+related questions defined under the categories in two sections. 
+ 
+Figure 1 – Auto Hold / Inbound Inspection screen 
+2) Under Inspection Level section, click on the category to view the inspection questions related to 
+it. 
+ 
+ 
+ 
+ 
+User Guide 
+5 
+Auto Hold / Inbound Inspection 
+On clicking Inspect (4), the system displays the list of Inspection Questions to validate the LPN. 
+ 
+Figure 2 – Auto Hold / Inbound Inspection screen – with inspection questions 
+3) Answer each question by choosing the options given under the Answers column in the grid. 
+On Submitting, the system saves the inspection details. 
+ 
+Figure 3 – Auto Hold / Inbound Inspection screen - answering inspection questions 
+4) Under Release Hold pane, select the Inbound Inspection Hold check box and select the 
+Release Code to release the LPN. 
+ 
+ 
+ 
+ 
+User Guide 
+6 
+Auto Hold / Inbound Inspection 
+On clicking Release, the system releases the selected LPN and displays the message as 
+“Inspection released from HOLD”. 
+ 
+Figure 4 – Auto Hold / Inbound Inspection screen - releasing the LPN 
+ 
+Case 1: 
+• 
+If the specified Disposition Code is 'Good - Good Product' and the Release Code is 
+'LPN QC Release', the system displays the message, "Inspection released from 
+HOLD". Click OK for the message. 
+Case 2: 
+• 
+If the specified Disposition Code is 'HOLD - Hold Disposition' and the Release Code 
+is 'LPN QC Release', the system displays the message, "Inspected LPNs still on 
+hold". Click OK for the message. 
+3.1. To perform LPN Split 
+The LPN Split feature helps the User to split the sellable/good product quantity to a new LPN. 
+1) Specify/select the LPN that is in 'Inbound Inspection Hold' and must be split into sellable quantity. 
+On clicking Sampling, the system displays the Sampling screen with the main LPN ID, Qty, SKU 
+in the respective fields. 
+ 
+Figure 5 – Sampling screen 
+2) Specify the new LPN ID in which the LPN Split quantity must be placed.  
+3) Specify the Required Qty to be taken from the main/inbound inspection hold LPN.  
+ 
+ 
+ 
+ 
+User Guide 
+7 
+Auto Hold / Inbound Inspection 
+4) Select the Disposition Code from the list.  
+5) Click Add to add the new LPN record in the grid. 
+6) Repeat the steps from 3 to 6 to create new LPNs with the split-up quantity. 
+7) After splitting the main LPN quantity into the required number of additional LPN(s), click Submit   
+to save the added LPN Split details. 
+ 
+The LPN(s) will be put on hold or released based on the Disposition Code selected for 
+the LPN(s). 
+4. What’s Next? 
+• 
+Navigate to LPN Hold Release Log (Queries) screen to view the details of the LPNs that were 
+held and released. 
+

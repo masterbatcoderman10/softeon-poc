@@ -1,0 +1,45 @@
+The image is a screenshot of a software interface titled "Auto Load Truck By SPN" from Softeon, a company that provides logistics and supply chain solutions.
+
+### Breakdown of the Interface:
+
+#### Header:
+- **Logo and Company Name**: Softeon logo with the tagline "LIMITLESS DELIVERED."
+- **Page Title**: "Auto Load Truck By SPN" is displayed prominently.
+- **User Information**: The user logged in is identified as "SFTADMIN."
+- **Icons**: There are several icons in the header:
+  - **Search Icon**: For searching within the interface.
+  - **Notification Icon**: Indicates alerts or notifications.
+  - **Help Icon**: Provides assistance or help documentation.
+
+#### Main Form Fields:
+- **Truck Ref No**: A text box where the truck reference number '144' is entered.
+- **Loaded By**: An empty text box.
+- **Tare Weight**: An empty text box.
+- **Include Loaded SPNs**: A checkbox that is not selected.
+
+#### Action Buttons:
+- **QUERY**: A button likely used to search or filter data based on the entered criteria.
+- **SAVE**: A button for saving the current data or settings (highlighted with a red border).
+- **RESET**: A button to clear the form fields or reset the state.
+- **REFRESH**: A button to reload or update the data displayed.
+
+#### Data Table:
+- **Columns**:
+  - **SPN #**: Identifiers for SPNs (e.g., 60000210, 60000211, 60000212).
+  - **Master LPN No**: Numbers associated with the master LPN (e.g., 1403, 1404, 1402).
+  - **Order Group**: Group identifiers (e.g., 0196-0006 - 0196-0006, 0196-9001 - 0196-9001, 0019-0007 - 0019-0007).
+  - **Customer**: Names or codes of customers, all in this screenshot are "CHERAW."
+  - **City**: The city associated with the customer (e.g., CHERAW).
+  - **State**: The state associated with the customer (e.g., SC).
+  - **Order Group Status**: Status of the order group (e.g., 70 - Pick Completed).
+  - **Master LPN Status**: Status of the master LPN.
+  - **SPN Status**: Status of the SPN (e.g., 10 - CLO...).
+
+- **Rows**: Each row provides details for individual SPNs, including their status and associated customer information.
+  - The first row is highlighted in blue and has a checkbox selected.
+
+#### Additional Features:
+- **Selection Checkbox**: Each row has a checkbox for selecting that row.
+- **Highlighted Row**: The first row is highlighted, indicating it is selected.
+
+Overall, this interface appears to be used for managing and auto-loading trucks based on SPN (Serial Product Number) data, with functionalities for querying, saving, resetting, and refreshing the displayed data.

@@ -1,0 +1,56 @@
+The provided image is a screenshot of a user interface for managing a security profile in a software application named Softeon. The interface is organized into several tabs and fields for detailed user management.
+
+### Tabs
+- **User**: The current tab selected.
+- Group
+- Advanced User Map
+- Module Map
+- User Access Map
+- Menu Access
+
+### Fields
+- **First Name**: The first name of the user is "Automation".
+- **Last Name**: The last name of the user is "User".
+- **User ID**: The user ID is "ATMUSER1".
+- **Password**: A field for entering the user's password.
+- **Confirm Password**: A field for confirming the user's password.
+- **Supervisor Password**: A field for entering a supervisor password (masked).
+- **E-Mail**: An empty field for entering the user's email.
+- **Portal/Dashboard**: The value is set to "-NA-".
+- **Voice User Picking Mode**: A dropdown field, not selected.
+- **Two Factor Auth Req**: Set to "NOT REQUIRED".
+- **User Group**: An empty field.
+- **Admin User**: A checkbox that is not checked.
+- **RF User**: A checkbox that is checked.
+- **Login Locked**: A checkbox that is not checked.
+- **Delete security questions**: A checkbox that is not checked.
+- **Change password during next logon**: A checkbox that is checked.
+- **Active**: A checkbox that is checked.
+
+### Additional Info Section
+- **User Type**: Set to "Internal Users".
+- **User Type ID**: Set to "Internal".
+- **Logging Type**: Set to "P - PROCESS".
+- **Log Severity Level**: A dropdown, not selected.
+- **Pwd Last Upd TStamp**: "06/28/2019 00:00:00".
+- **Label Printer**: Set to "DUMMY_LABEL".
+- **Report Printer**: Set to "DUMMY_LASER".
+- **Report Directory**: An empty field.
+- **Hazmat Handling Level**: An empty field.
+- **Authentication**: An empty field.
+- **External User ID**: An empty field.
+
+### Buttons
+- **Submit**: For submitting the form.
+- **Delete**: For deleting the user.
+- **Reset**: For resetting the form.
+- **Find**: For searching users.
+- **Refresh**: For refreshing the form.
+- **Security Questions**: For managing security questions.
+- **Copy From**: For copying settings from another user.
+
+### Miscellaneous
+- **Search menu...**: A search bar located at the top right.
+- **Softeon Logo**: Displayed at the top right corner.
+
+The interface is designed for detailed user profile management, including personal information, security settings, and additional configuration options.

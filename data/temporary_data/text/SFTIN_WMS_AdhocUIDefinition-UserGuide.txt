@@ -1,0 +1,80 @@
+SOFTEON, INC. 
+11700 Plaza America Dr., Suite 910 
+Reston, Virginia USA 20190 
+Tel 703-793-0005 
+WWW.SOFTEON.COM 
+ 
+ 
+ 
+ADHOC UI DEFINITION 
+User Guide 
+ 
+ 
+ 
+ 
+User Guide 
+2 
+Adhoc UI Definition 
+Contents 
+Conventions Used ................................................................................................................... 3 
+1. Overview 
+............................................................................................................................... 4 
+2. Pre-requisites ....................................................................................................................... 4 
+3. Creating Definition ID and Mapping to Objects 
+.................................................................. 4 
+ 
+ 
+ 
+ 
+ 
+User Guide 
+3 
+Adhoc UI Definition 
+Conventions Used 
+This section interprets the various conventions used in the document for better understanding of the 
+screen functionality. 
+Convention 
+Usage 
+ 
+Denotes the mandatory fields in the screen. Values need to be specified in 
+the fields in order to proceed with the screen operations. 
+ 
+Denotes the fields that show values retrieved from the system. 
+ 
+Any subject content encapsulated in a section marked by this icon indicates 
+that the given information will serve as a useful tip for the end users. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+User Guide 
+4 
+Adhoc UI Definition 
+1. Overview 
+You can use the Adhoc UI Definition screen for laying out a set of Ad hoc objects on the interface grid. 
+With the appropriate values of X position, Y position and column span, the definition figures exactly where 
+the objects should be placed. 
+Menu Access: ADM – Utility > Adhoc Setup > Adhoc UI Definition 
+2. Pre-requisites 
+• 
+The UI Object must be created. 
+3. Creating Definition ID and Mapping to Objects 
+Mandatory Values 
+1) Specify a Definition ID. 
+2) Specify an Object ID which to be included on the interface. 
+ 
+Figure 1 – Adhoc UI Definition screen 
+Optional Values 
+3) Specify the Column Span value to define the length of the object. 
+ 
+A negative value indicates that column span to be applied only for the Widget but 
+the positive value will be applied to the cell associated with label. 
+4) Specify the X Position and Y position to specify exactly where the UI objects should be placed 
+on the interface. 
+On Submitting, the system displays the record in the grid.  
+ 
+Figure 2 – Adhoc UI Definition screen – with records 
+

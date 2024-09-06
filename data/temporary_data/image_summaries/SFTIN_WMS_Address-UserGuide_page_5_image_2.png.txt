@@ -1,0 +1,29 @@
+The image displays a web-based form interface for managing addresses, part of the Softeon system. The form includes various fields for entering and managing address details. Here are the key elements present:
+
+1. **Header:**
+   - The top left corner features the Softeon logo and the word "Address."
+   - On the right side, there are icons for notifications, alerts, help, and user account (labeled "SFTADMIN").
+
+2. **Form Fields:**
+   - **Mandatory Fields:**
+     - *Name:* (filled with "AURORA CALL CENTER")
+     - *Address:* (filled with "4248 MERIDIAN PARKWAY")
+   - **Optional Fields:**
+     - Attn Line, Address Line2, Address Line3, Address Line4, Address Line5, City, State, Zip, Country Code (pre-filled with "US"), Extn
+     - Contact Information: Home Ph, Work Phone No, Extn, Fax No, E-Mail 1, E-Mail 2
+   - **Additional Fields:**
+     - Geo Code, Ref Field1 (filled with "AUR424CDA1"), Ref Field2, Ref Field3, Ship Zone Group
+
+3. **Checkboxes:**
+   - "Create as New Address" (checked)
+   - "Active" (checked)
+
+4. **Buttons:**
+   - **Submit:** For submitting the form data.
+   - **Reset:** For resetting the form fields.
+   - **Refresh:** For refreshing the form content.
+
+5. **Search Section:**
+   - At the bottom, there is a search section with fields for Address ID, Address Name, Address Line1, City, State, and Zip, along with a "GO" button.
+
+Overall, the interface is designed for entering and managing address details with functionalities for submission, resetting, refreshing, and searching addresses.

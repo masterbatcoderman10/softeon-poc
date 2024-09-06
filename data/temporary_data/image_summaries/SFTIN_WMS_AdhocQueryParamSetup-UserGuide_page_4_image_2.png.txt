@@ -1,0 +1,26 @@
+The image depicts a user interface for an "Adhoc Query Param Setup" screen from a software application developed by Softeon. The interface has fields and options to set up parameters for an ad-hoc query. Below is a detailed summary of the various elements present in the interface:
+
+1. **Header:**
+   - The top-left corner features the Softeon logo and the text "Adhoc Query Param Setup."
+   - On the top-right corner, there are icons for search, history, alerts, help, and a dropdown with the label "SFTADMIN" indicating the logged-in user.
+
+2. **Form Fields:**
+   - **Warehouse ID:** A required field marked with an asterisk (*) and currently set to "WH1."
+   - **Query ID:** A required field marked with an asterisk (*) and currently set to "1001."
+   - **Definition ID:** A required field marked with an asterisk (*) and currently set to "D30604035614."
+   - **Object ID:** A required field marked with an asterisk (*) and currently set to "20130604035614555."
+   - **SQL Placeholder Value:** A required field marked with an asterisk (*).
+   - **SQL Placeholder Expr:** A required field marked with an asterisk (*).
+   - **Param Caption:** An optional field.
+   - **Seq No:** A field with the value set to "1."
+   - **Default Value:** An optional field.
+   - **Param Group ID:** An optional field.
+
+3. **Control Fields:**
+   - Options for "Show Filter," "Mandatory Flag," "Enable Flag," and "Param Group Flag."
+   - A checkbox for "Active," which is currently checked.
+
+4. **Action Buttons:**
+   - At the bottom of the form, there are six buttons for actions: "Submit," "Delete," "Reset," "Find," "Refresh."
+
+This interface allows users to input and manage specific details related to ad-hoc query parameters, facilitating customized database queries within the Softeon system.

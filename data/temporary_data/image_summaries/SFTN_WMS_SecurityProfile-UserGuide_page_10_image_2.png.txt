@@ -1,0 +1,26 @@
+The image shows a screenshot of a software interface, specifically a "Security Profile" management page from a company or product named Softeon. The primary tab selected on this page is labeled "Group," which is highlighted at the top.
+
+### Main Sections and Elements:
+1. **User Group Management:**
+   - There are input fields labeled "User Group," "Description," and "User Group Level." 
+   - "User Group" contains the text "ADM."
+   - "Description" contains the text "Admin user group."
+   - "User Group Level" contains the text "2-Admin" and has a dropdown selection option.
+   - There is also a checkbox labeled "Active," which is checked.
+
+2. **Action Buttons:**
+   - Below the input fields, there are several action buttons: "Submit," "Delete," "Reset," "Find," and "Refresh." The "Submit" button is highlighted.
+
+3. **User Group List:**
+   - A table is displayed below the input fields and action buttons. It contains columns labeled "User Group," "Description," "User Group Level," and "Status."
+   - The first row of the table is highlighted in green, and it corresponds to the "ADM" user group with the description "Admin user group," user group level "2-Admin," and status "Active."
+   - Other user groups listed in the table include "DMUG," "EXTGROUP," "MIS," "S7UG1," "S7UG2," "S7UG3," and "UIGRP," all with varying descriptions and user group levels, but all have the status "Active."
+
+### Navigation and Interface Elements:
+- At the top of the interface, there are several tabs: "User," "Advanced User Map," "Module Map," "User Access Map," and "Menu Access."
+- A search menu bar is located on the top right corner.
+- The Softeon logo is present in the top right corner.
+- There are several icons next to the search bar, possibly for navigation purposes or additional functionalities.
+
+### Summary:
+The interface allows for the management of user groups, including creating, editing, and deleting groups. The user can specify details such as the name, description, and level of the user group and mark them as active. The table provides an overview of existing user groups, their descriptions, levels, and status.

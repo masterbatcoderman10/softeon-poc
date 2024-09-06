@@ -1,0 +1,29 @@
+The provided image is a screenshot of a software interface from a system called "Softeon," specifically under the "Security Profile" section. The interface appears to be designed for managing user group assignments.
+
+Key Elements:
+
+1. **Tabs and Navigation:**
+   - There are several tabs at the top, including "User," "Group," "Advanced User Map," "Module Map," "User Access Map," and "Menu Access."
+   - The "Advanced User Map" tab is currently selected.
+
+2. **User Group Selection:**
+   - On the left side, there is a section labeled "User Group Selection."
+   - It contains a list of user groups with corresponding names, displayed in a table format with columns "User Group" and "Name."
+   - User groups listed include "ADM" (Admin user group), "DMUG" (demouser), "EXTGROUP" (EXTGROUP), "MIS" (MIS user group), "S7UG1" (ATM User Group), "S7UG2" (ATM User Group), "S7UG3" (ATM User Group), and "UIGRP" (UI Group).
+   - The "ADM" group is currently selected, indicated by a blue radio button.
+
+3. **User Selection:**
+   - On the right side, there is a section labeled "User Selection."
+   - This section displays a list of users in a table format with columns "User ID" and "Name."
+   - Users are categorized into "Mapped Users" and "Unmapped Users."
+   - Mapped Users: Users who are already assigned to the selected user group. They are indicated by a green checkbox. Examples include "CMURUGES" (CHANDRAMOHAN MURUGESAN), "JARROYO" (j arroyo), "MAHESH" (mahesh d), and "SFTADMIN" (SFT ADMIN).
+   - Unmapped Users: Users who are not assigned to the selected user group. They are indicated by a red checkbox. Examples include "ARUNPRAK" (ARUN PRAKASH), "ATMUSER1" (Automation User), "ATMUSER2" (Automation User), "ATMUSER3" (Automation User), "CAMERON" (Cameron Scott Loveall), and "DEMOUSER" (demo user).
+
+4. **Buttons:**
+   - At the bottom, there are three buttons labeled "Submit," "Reset," and "Refresh," likely used to submit changes, reset the form, and refresh the user list, respectively.
+
+5. **Search and Icons:**
+   - There is a search bar at the top-right corner for searching the menu.
+   - Various icons for additional functionalities such as help, notifications, and user profile are present next to the search bar.
+
+Overall, the interface is designed to manage user group mappings in an organized and user-friendly manner.

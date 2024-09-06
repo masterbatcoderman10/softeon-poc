@@ -1,0 +1,97 @@
+SOFTEON, INC. 
+11700 Plaza America Dr., Suite 910 
+Reston, Virginia USA 20190 
+Tel 703-793-0005 
+WWW.SOFTEON.COM 
+ 
+ 
+ 
+BATCH PREFERENCE 
+User Guide 
+ 
+ 
+ 
+ 
+User Guide 
+2 
+Batch Preference 
+Contents 
+Conventions Used ................................................................................................................... 3 
+1. Overview 
+............................................................................................................................... 4 
+2. Pre-requisites ....................................................................................................................... 4 
+3. Defining preference types for creating the Batch 
+.............................................................. 4 
+ 
+ 
+ 
+ 
+ 
+User Guide 
+3 
+Batch Preference 
+Conventions Used 
+This section interprets the various conventions used in the document for better understanding of the 
+screen functionality. 
+Convention 
+Usage 
+ 
+Denotes the mandatory fields in the screen. Values need to be specified in 
+the fields in order to proceed with the screen operations. 
+ 
+Denotes the fields that show values retrieved from the system. 
+ 
+Any subject content encapsulated in a section marked by this icon indicates 
+that the given information will serve as a useful tip for the end users. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+User Guide 
+4 
+Batch Preference 
+1. Overview 
+You can use the Batch Preference screen for defining a batch preference type for creating the batch 
+routes to perform batch picking. 
+Menu Access: Masters > Outbound > Planning > Wave > Batch > Batch Preference 
+2. Pre-requisites 
+• 
+Preference Type must be created. 
+3. Defining preference types for creating the Batch 
+The system displays the Cust. Bus Type as ‘D – Direct to Store’, by default. However, you can the 
+Cust. Bus. Type, if required. 
+Mandatory Values 
+1) Specify/select the Preference Type to set the type of preference for route. 
+2) Specify the Preference ID applicable for the defined preference type. 
+3) Specify the Pref Seq # (Preference Sequence Number) by which batch preference will be sorted. 
+4) Specify/select the Source Batch Pick Route and Target Batch Pick Route. 
+5) Specify/select the Pick Type. 
+Optional Values 
+6) Select the Cust. Bus Sub Type from the list. 
+7) Select the Quantity check box and specify the following details:  
+• 
+Select the Quantity Type as ‘Percentage’ or ‘Value’ to specify the order quantity range in 
+terms of percentage or value. 
+• 
+Specify the order quantity Range values in from text boxes in Percentage or Value. 
+• 
+Select the unit of measurement for the order quantity (units, cases, or pallets) from the UOM 
+list. 
+ 
+Figure 1 — Batch Preference screen 
+ 
+ 
+ 
+ 
+User Guide 
+5 
+Batch Preference 
+On Submitting, the system displays the defined Batch Preference details in the grid. 
+ 
+Figure 2 — Batch Preference screen — with records 
+ 
+

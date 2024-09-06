@@ -1,0 +1,38 @@
+The image is a screenshot of an application interface titled "Auto Load Truck By SPN" from Softeon. It appears to be a logistics or warehouse management system where users can manage truck loads by SPN (Serial Number).
+
+### Breakdown of the Interface:
+
+#### Header:
+- **Softeon Logo**: Appears at the top left, with the tagline "LIMITLESS DELIVERED."
+- **Title**: "Auto Load Truck By SPN" is prominently displayed.
+- **User Information**: The user "SFTADMIN" is logged in, indicated at the top right.
+
+#### Search and Input Fields:
+- **Truck Ref No**: A field labeled "Truck Ref No" with the number "144" entered.
+- **Loaded By**: An empty input field labeled "Loaded By."
+- **Tare Weight**: An empty input field labeled "Tare Weight."
+- **Include Loaded SPNs**: A checkbox labeled "Include Loaded SPNs" which is not checked.
+
+#### Action Buttons:
+- **QUERY**: A button to query data.
+- **SAVE**: A button to save data.
+- **RESET**: A button to reset the input fields.
+- **REFRESH**: A button to refresh the data.
+
+#### Data Table:
+The table displays several columns with corresponding data:
+- **Checkbox**: Each row has a checkbox, presumably for selection.
+- **SPN #**: Serial numbers listed as 60000210, 60000211, 60000212.
+- **Master LPN No**: Numbers listed as 1403, 1404, 1402.
+- **Order Group**: Numbers listed as 0196-0006 - 0196-0006, 0196-9001 - 0196-9001, 0019-0007 - 0019-0007.
+- **Customer**: The field appears to repeat the Order Group numbers.
+- **City**: All entries are listed as "CHERAW."
+- **State**: All entries are listed as "SC," indicating South Carolina.
+- **Order Group Status**: All entries show "70 - Pick Completed."
+- **Master LPN Status**: All entries show "70 - Pick Completed."
+- **SPN Status**: All entries show "10 - CLO..." (the rest is truncated).
+
+#### Navigation and Alerts:
+- **Navigation Icons**: Icons for notifications, alerts, and help are present next to the user information.
+  
+The table rows are highlighted in green, which might indicate a specific status or selection. The interface allows for managing and tracking the loading status of trucks based on their SPN numbers.

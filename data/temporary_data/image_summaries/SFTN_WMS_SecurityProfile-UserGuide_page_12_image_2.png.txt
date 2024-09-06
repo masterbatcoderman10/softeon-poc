@@ -1,0 +1,32 @@
+The image depicts a screenshot of a "Security Profile" management interface from Softeon. The interface is under the "Module Map" tab, indicated by its highlighted state among other tabs: User, Group, Advanced User Map, User Access Map, and Menu Access.
+
+Key elements of the interface include:
+
+1. **Selection Options:**
+   - **Warehouse:** A dropdown menu for selecting the warehouse, currently set to "WH1."
+   - **Module:** A dropdown menu for selecting the module, currently set to "ADM-Admin Management."
+   - **User Group/User ID:** Radio buttons to toggle between "User Group" and "User ID," with "User Group" currently selected.
+
+2. **User Group Selection Table:**
+   - The table lists user groups and their descriptions.
+   - Columns include "User Group" and "Name."
+   - Mapped user groups (those that have access) are indicated by green checkmarks.
+     - Examples: 
+       - ADM (Admin user group)
+       - DMUG (demouser)
+       - EXTGROUP (EXTGROUP)
+       - MIS (MIS user group)
+       - S7UG1 (ATM User Group)
+       - UIGRP (UI Group)
+   - Unmapped user groups (those that do not have access) are indicated by red crosses.
+     - Examples:
+       - S7UG2 (ATM User Group)
+       - S7UG3 (ATM User Group)
+
+3. **Action Buttons:**
+   - Located at the bottom of the interface:
+     - **Submit:** To save changes.
+     - **Reset:** To reset changes made.
+     - **Refresh:** To refresh the displayed data.
+
+The interface is designed to manage security profiles by mapping or unmapping user groups to specific modules and warehouses.

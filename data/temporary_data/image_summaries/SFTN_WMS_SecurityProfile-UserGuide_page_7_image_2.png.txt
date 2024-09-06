@@ -1,0 +1,63 @@
+The image is a screenshot of a "Security Profile" management interface for a software application developed by Softeon. The interface allows administrators to manage user accounts and their security settings. Here is a detailed breakdown of the interface:
+
+### Top Navigation Tabs:
+- **User**
+- **Group**
+- **Advanced User Map**
+- **Module Map**
+- **User Access Map**
+- **Menu Access**
+
+### User Details Form:
+- **First Name:** Text field (filled with "Automation")
+- **Last Name:** Text field (filled with "User")
+- **User ID:** Text field (filled with "ATMUSER1")
+- **Password:** Password field
+- **Confirm Password:** Password field
+- **Supervisor Password:** Password field
+- **E-Mail:** Text field (empty)
+- **Portal/Dashboard:** Dropdown menu (selected "-NA-")
+- **Voice User Picking Mode:** Dropdown menu (empty)
+- **Two Factor Auth Req:** Dropdown menu (selected "NOT REQUIRED")
+- **User Group:** Text field (filled with "S7UG1")
+- **Admin User:** Checkbox (unchecked)
+- **RF User:** Checkbox (checked)
+- **Login Locked:** Checkbox (unchecked)
+- **Delete security questions:** Checkbox (unchecked)
+- **Change password during next logon:** Checkbox (checked)
+- **Active:** Checkbox (checked)
+
+### Action Buttons:
+- **Submit**
+- **Delete**
+- **Reset**
+- **Find**
+- **Refresh**
+- **Security Questions**
+- **Copy From**
+
+### User List Table:
+The table below displays a list of users along with their respective details:
+- **Columns:** User ID, User Name, User Type, User Type ID, User Group, Picking Mode, Report Printer, Label Printer, Status
+- **Highlighted Row:** "ATMUSER1" (User ID) is highlighted with a green background.
+  - **User ID:** ATMUSER1
+  - **User Name:** Automation User
+  - **User Type:** Internal Users
+  - **User Type ID:** Internal
+  - **User Group:** S7UG1
+  - **Picking Mode:** (empty)
+  - **Report Printer:** DUMMY_LASER
+  - **Label Printer:** DUMMY_LABEL
+  - **Status:** Active
+
+Other user accounts listed include ARUNPRAK, ATMUSER2, ATMUSER3, CAMERON, DOCUSER, etc., each with various details filled in corresponding columns.
+
+### Interface Features:
+- **Search Menu:** Search bar in the top right corner.
+- **Icons:**
+  - **Question Mark:** Help or information.
+  - **Circular Arrow:** Refresh.
+  - **Magnifying Glass:** Search.
+  - **User Icon:** User profile or settings.
+
+The interface is designed to manage user profiles, including their authentication details, group membership, and associated printer settings.

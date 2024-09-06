@@ -1,0 +1,47 @@
+The image is a screenshot of a web-based application interface titled "Adhoc Master Template" developed by Softeon. The interface is designed for managing SKU (Stock Keeping Unit) profiles and their associated attributes.
+
+### Top Section:
+- **Template ID:** SKU_PROFILE
+- **Field Name:** RETURNS_ALLOWED_FLAG
+- **Object ID:** SKU_RETURNS_ALLOWED_FLAG
+- **Field Caption:** lblreturnsallowedflag
+- **Definition ID:** SKU_MASTER
+- **Code Type:** (empty)
+- **Default Value:** N
+- **Key Handler:** AcceptChars
+- **Validation Message:** (empty)
+- **Validation Query:** (empty)
+- **Sort Seq No:** 0
+- **Display Align:** (dropdown with "left" selected)
+- **Display Width:** 0
+- **Control Fields:**
+  - GUI Flag (unchecked)
+  - Display Flag (checked)
+  - Upper Case (unchecked)
+  - Search Flag (unchecked)
+  - Mandatory Flag (unchecked)
+  - Auto Focus (unchecked)
+  - Active (checked)
+
+### Buttons:
+- **Submit:** To save changes.
+- **Delete:** To delete the entry.
+- **Reset:** To clear the form.
+- **Find:** To search for entries.
+- **Refresh:** To refresh the page.
+
+### Bottom Section (Table):
+A table listing existing fields for the SKU_PROFILE template.
+- **Template ID:** SKU_PROFILE
+- **Field Name:** Different field names relevant to SKU profile such as RET_INSTRUCTIONS, RET_DISP_OVERRIDE_FLAG, RET_DESTINATION_CODE, RETURNS_CUTOFF_DATE, RETURNS_ALLOWED_FLAG.
+- **Field Caption:** Corresponding field captions.
+- **Object ID:** Different object IDs like SKU_RET_INSTRUCTIONS, RET_DISP_OVERRIDE_FLAG, SKU_RET_DESTINATION_CODE, SKU_RETURNS_CUTOFF_DATE, SKU_RETURNS_ALLOWED_FLAG.
+- **Definition ID:** SKU_MASTER for all entries.
+- **Status:** All entries marked as Active.
+
+### Header:
+- **Logo:** Softeon logo with the tagline "LIMITLESS DELIVERED".
+- **User:** Logged in as SFTADMIN.
+- **Icons:** Search, Warning, Help.
+
+The interface appears to be part of a larger system for managing SKU attributes, allowing users to configure and maintain various settings related to SKUs.

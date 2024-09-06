@@ -1,0 +1,189 @@
+SOFTEON, INC. 
+11700 Plaza America Dr., Suite 910 
+Reston, Virginia USA 20190 
+Tel 703-793-0005 
+WWW.SOFTEON.COM 
+ 
+ 
+ 
+ACCOUNT 
+User Guide 
+ 
+ 
+ 
+ 
+User Guide 
+2 
+Account 
+Contents 
+Conventions Used ................................................................................................................... 3 
+1. Overview 
+............................................................................................................................... 4 
+2. Pre-requisites ....................................................................................................................... 4 
+3. Defining Account Details 
+..................................................................................................... 4 
+4. What’s Next? ........................................................................................................................ 7 
+ 
+ 
+ 
+ 
+ 
+User Guide 
+3 
+Account 
+Conventions Used 
+This section interprets the various conventions used in the document for better understanding of the 
+screen functionality. 
+Convention 
+Usage 
+ 
+Denotes the mandatory fields in the screen. Values need to be specified in 
+the fields in order to proceed with the screen operations. 
+ 
+Denotes the fields that show values retrieved from the system. 
+ 
+Any subject content encapsulated in a section marked by this icon indicates 
+that the given information will serve as a useful tip for the end users. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+User Guide 
+4 
+Account 
+1. Overview 
+You can use the Account screen for creating and maintaining the account details against a Business Unit. 
+A single account can be mapped to many customers. 
+Menu Access:  Masters > Outbound > Setup > Account  
+2. Pre-requisites 
+• 
+Business Unit must be created. 
+3. Defining Account Details 
+BASIC INFO 
+Mandatory Values 
+1) Select the Business Unit to which the account belongs. 
+The system displays the Business Unit Address of the selected Business Unit. 
+2) Specify the Account ID and its description. 
+3) Click Account Address and select the address of the account, if exists or create a new address. 
+Optional Values 
+4) Select the Priority from the list to prioritize the tasks created against a particular Order. 
+5) Select the Cust Bus. Type (Customer Business Type) of the account to indicate that this account 
+will be used only for the selected type of customers. 
+6) Specify/select the Paying Office against which the account has to be created. 
+On selecting, the system displays the Remit To and Terms Code based on which the payment 
+will be done by the customer. 
+7) Specify/select the Carrier by which the orders of this account will be delivered.  
+ 
+Figure 1 – Account screen - Defining Basic Info 
+ 
+ 
+ 
+ 
+User Guide 
+5 
+Account 
+GENERAL INFO 
+8) Click General Info tab. 
+9) Select the Case Flag check box and the Case Lbl Style from the list to generate the picking label 
+based on the selected label format for the cases. 
+10) Select the LPN Flag check box and the LPN Lbl Style from the list  to generate the picking label 
+based on the selected label format for the LPNs. 
+11) Select the Frieght Type as ‘C – Collect’, ‘P – Prepaid’ or ‘T – Third Party’. 
+On selecting the Freight Type as ‘Third Party’, specify the Bill Account No. 
+12) Select the Transmit Type to indicate whether to send the invoice by mail or EDI. 
+13) Select the Deal Cd Cust Catg (Deal Code Customer Category) from the list. 
+14) Select any one of the following Invoice Type from the list to denote the type of bill payment: 
+• 
+Direct Invoice - Direct invoice to be generated for the customer to make payment. 
+• 
+Split Invoice - The Total Amount to be divided and invoiced for each amount. 
+• 
+Master Invoice - Master Invoice to be generated for the customer to make payment. 
+15) Specify the District Center #. 
+16) Select any of the Alloc Point (Allocation Point): 
+• 
+Allocation is not required - Non Allocation 
+• 
+Allocation during Order - Pick the items only for the available inventory in the 
+warehouse 
+• 
+Allocation during Drop in Distribution - Allocation is done when the order is in In 
+Distribution status. 
+• 
+Allocation at Wave Level - Allocation is done when the wave is created 
+17) Select the Packing Slip Gen.Lvl (Packing Slip Generation Level) to indicate at which level the 
+packing slip must be generated. 
+• 
+Order - Packing Slip will be generated at Order level. 
+• 
+Order Group - Packing Slip will be generated at Order Group level. 
+• 
+Container - Packing Slip will be generated at SPN/PCN level. 
+• 
+None - Packing Slip will be generated at SKU level. 
+18) Specify the Vendor ID. 
+19) Select the Pack Slip Type. 
+20) Under Ship Day Range section, select the days on which the shipment can be done. 
+21) Select the following check boxes, if required: 
+• 
+Allow Backorder – to create a new order for the pending quantity of the particular order. 
+• 
+Multi Shipment – to indicate multiple shipment is allowed. 
+• 
+Mand. Fulfill – to ship only the fulfilled orders 
+ 
+ 
+ 
+ 
+User Guide 
+6 
+Account 
+• 
+Price Override – to overrides the price 
+• 
+Load No Reqd Flag – to allow only the shipments with Load No 
+• 
+Select any one of the following option from MBOL Req Flag: 
+I. 
+Yes - To generate the Master Bill Of Lading report. 
+II. 
+No - Not to generate the Master Bill Of Lading report. 
+III. 
+Combine - To generate more than one Master Bill Of Lading report in a single 
+MBOL report. 
+ 
+Figure 2 – Account screen - Defining General Info 
+OTHER INFO 
+ 
+22) Click Other Info tab.  
+23) Click 
+ near Sales Territory Details to select the Division, Territory, and Region. 
+24) Specify/select the Marketing Coordinator, Account Coordinator and Customer Service Rep.  
+25) Under Hdr Comment section, specify the following to view them in the BOL report and the 
+Packing Slip: 
+• 
+BOL Instruction 1 
+• 
+BOL Instruction 2 
+• 
+BOL Instruction 3 
+ 
+ 
+ 
+ 
+User Guide 
+7 
+Account 
+ 
+Figure 3 – Account screen - Defining Other Info 
+On Submitting, the system creates the account with the given details. 
+4. What’s Next? 
+• 
+Navigate to the Customer screen to create customer. 
+ 
+ 
+

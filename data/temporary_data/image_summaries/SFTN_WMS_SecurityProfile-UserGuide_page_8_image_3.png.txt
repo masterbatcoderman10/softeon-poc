@@ -1,0 +1,63 @@
+The provided image is a screenshot of a "Security Profile" user management interface, likely from a software application named "Softeon." The interface is designed to manage user details and security settings.
+
+### Interface Layout:
+
+1. **Header:**
+   - Contains tabs labeled: "User," "Group," "Advanced User Map," "Module Map," "User Access Map," and "Menu Access."
+   - A search bar is located in the upper-right corner.
+   - The Softeon logo is displayed in the upper-right corner.
+
+2. **User Detail Form:**
+   - **Fields:**
+     - First Name: "Automation"
+     - Last Name: "User"
+     - User ID: "ATMUSER1"
+     - Password and Confirm Password fields (both are filled but not visible)
+     - Supervisor Password (filled but not visible)
+     - E-Mail: (empty)
+     - Portal/Dashboard: "-NA-"
+     - Voice User Picking Mode: (dropdown, currently empty)
+     - Two Factor Auth Req: "NOT REQUIRED"
+     - User Group: "S7UG1"
+   - **Checkboxes:**
+     - Admin User: (unchecked)
+     - RF User: (unchecked)
+     - Login Locked: (checked)
+     - Delete security questions: (unchecked)
+     - Change password during next logon: (checked)
+     - Active: (checked)
+   - **Buttons:**
+     - Submit, Delete, Reset, Find, Refresh, Security Questions, Copy From
+
+3. **User List Table:**
+   - **Columns:**
+     - User ID
+     - User Name
+     - User Type
+     - User Type ID
+     - User Group
+     - Picking Mode
+     - Report Printer
+     - Label Printer
+     - Status
+   - **Highlighted Row:**
+     - User ID: "ATMUSER1"
+     - User Name: "Automation User"
+     - User Type: "Internal Users"
+     - User Type ID: "Internal"
+     - User Group: "S7UG1"
+     - Picking Mode: (not specified)
+     - Report Printer: "DUMMY_LASER"
+     - Label Printer: "DUMMY_LABEL"
+     - Status: "Active"
+
+### Key Actions:
+- The user can manage user profiles by adding, editing, deleting, and searching for users.
+- The "Submit" button is highlighted, indicating a possible pending action.
+- The "Login Locked" checkbox is checked for the user "ATMUSER1," suggesting that this user's login is currently locked.
+
+### Additional Features:
+- The interface allows for additional configuration for each user, including assigning roles, setting up two-factor authentication, and linking to printers.
+- The user list provides a quick overview of all users and their statuses, making it easier to manage multiple users.
+
+This interface is typically used by administrators to manage security profiles within a software application, ensuring users have the appropriate access and roles.

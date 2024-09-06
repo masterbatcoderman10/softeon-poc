@@ -1,0 +1,67 @@
+The provided image is a screenshot of a software application's "Security Profile" section from a system likely named Softeon. The interface appears to be used for managing user accounts and their security settings.
+
+### Key Components:
+
+#### Top Section:
+- **Tabs:**
+  - User
+  - Group
+  - Advanced User Map
+  - Module Map
+  - User Access Map
+  - Menu Access
+
+- **User Information Fields:**
+  - First Name: Automation
+  - Last Name: User
+  - User ID: ATMUSER1
+  - Password
+  - Confirm Password
+  - Supervisor Password (required field)
+  - E-Mail (blank)
+  - Portal/Dashboard: -NA-
+  - Voice User Picking Mode (dropdown)
+  - Two Factor Auth Req: NOT REQUIRED
+  - User Group: S7UG1
+  - Admin User (unchecked)
+  - RF User (checked)
+  - Login Locked (unchecked)
+  - Delete security questions (unchecked)
+  - Change password during next logon (checked)
+  - Active (checked)
+  - Additional Info (expandable)
+
+- **Action Buttons:**
+  - Submit
+  - Delete
+  - Reset
+  - Find
+  - Refresh
+  - Security Questions
+  - Copy From
+
+#### Bottom Section:
+- **User List Table:**
+  - Headers:
+    - User ID
+    - User Name
+    - User Type
+    - User Type ID
+    - User Group
+    - Picking Mode
+    - Report Printer
+    - Label Printer
+    - Status
+  
+  - Rows (highlighted row details):
+    - User ID: ATMUSER1
+    - User Name: Automation User
+    - User Type: Internal Users
+    - User Type ID: Internal
+    - User Group: S7UG1
+    - Picking Mode: (blank)
+    - Report Printer: DUMMY_LASER
+    - Label Printer: DUMMY_LABEL
+    - Status: Active
+
+The highlighted row in the table corresponds to the user "ATMUSER1" whose details are filled in the top section. This user is an internal user with the group S7UG1 and has active status. The interface allows for managing various user-related settings and permissions, as well as performing actions like submitting changes, resetting fields, and setting security questions.

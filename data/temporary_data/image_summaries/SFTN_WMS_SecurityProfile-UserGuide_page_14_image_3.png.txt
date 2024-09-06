@@ -1,0 +1,56 @@
+The image is a screenshot of a software interface from Softeon, specifically focusing on the "Security Profile" module. The interface is related to user management and access control. Here is a detailed breakdown of the elements in the image:
+
+### Interface Layout
+1. **Tabs at the Top:**
+   - User
+   - Group
+   - Advanced User Map
+   - Module Map (currently selected)
+   - User Access Map
+   - Menu Access
+
+2. **Header:**
+   - The header section displays "Softeon" on the right side with a logo.
+   - A search menu is available at the top right.
+   - Icons for various functions (search, refresh, help, etc.) are present next to the search bar.
+
+### Main Content
+1. **Selection Options:**
+   - Two radio button options for selecting either "User Group" or "User ID". The "User ID" option is currently selected.
+
+2. **Warehouse Dropdown:**
+   - A dropdown menu for selecting the warehouse. The selected warehouse is "WH1".
+
+3. **Module Dropdown:**
+   - A dropdown menu for selecting the module. The selected module is "ADM-Admin Management".
+
+4. **User Group Selection Table:**
+   - A table listing different user groups with columns for "User Group" and "Name".
+   - The following user groups are listed:
+     - ADM (Admin user group)
+     - DMUG (demouser)
+     - EXTGROUP (EXTGROUP)
+     - MIS (MIS user group)
+     - S7UG1 (ATM User Group)
+     - UIGRP (UI Group)
+   - The "ADM" user group is currently selected, indicated by the blue radio button.
+
+5. **User Selection Table:**
+   - A table listing user IDs and names for the selected module and user group.
+   - The following user IDs and names are listed:
+     - CMURUGES (CHANDRAMOHAN MURUGESAN)
+     - JARROYO (j arroyo)
+     - MAHESH (mahesh d)
+     - SFTADMIN (SFT ADMIN)
+   - There are checkboxes next to each user ID for selection.
+
+### Action Buttons
+1. **Submit:**
+   - A "Submit" button highlighted in green, indicating that it's the primary action button.
+2. **Reset:**
+   - A "Reset" button in grey.
+3. **Refresh:**
+   - A "Refresh" button in grey.
+
+### Overall Purpose
+The interface allows an administrator to map modules to user groups or individual user IDs. The administrator can select a user group or user ID, choose a warehouse, and assign the module "ADM-Admin Management" to the selected users. The selected users can then be submitted for access changes.

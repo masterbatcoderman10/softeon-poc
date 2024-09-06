@@ -1,0 +1,37 @@
+The image shows a screenshot of a software interface titled "Security Profile" from a company named Softeon. The interface appears to be for managing user access settings for a warehouse management system (WMS). Here are the main elements present in the image:
+
+1. **Tabs and Navigation:**
+   - Tabs at the top include "User," "Group," "Advanced User Map," "Module Map," "User Access Map," and "Menu Access," with "Menu Access" currently active.
+
+2. **Selection Fields:**
+   - Several selection fields are present near the top of the interface:
+     - **Warehouse:** WH1
+     - **Bldg ID:** B1
+     - **User Group:** ADM
+     - **Business Unit:** (Field is blank)
+     - **App ID:** WMS
+     - **Parent Menu:** (Field is blank)
+   - There are also checkboxes for "RF Menu" and "Hybrid," both unchecked.
+
+3. **Action Buttons:**
+   - Below the selection fields, there are several buttons: "Submit," "Copy," "Reset," "Find," "Refresh," and "Report." The "Copy" button is highlighted with a red border.
+
+4. **Screen Name and Permissions:**
+   - A table lists various screen names and their associated permissions. The table columns include "Screen Name," "View," "Update," and "Delete."
+   - The screen names listed include:
+     - Masters - (1520)
+     - Inbound - (152001)
+     - Warehouse Setup - (15200101)
+     - Location Maintenance - (1520010101)
+     - Location Type - (1520010104)
+     - Aisle Creation - (1520010113)
+     - Aisle Header - (15200101301)
+     - Aisle Detail - (15200101302)
+   - All the permissions (View, Update, Delete) for each screen name are checked.
+
+5. **Additional Features:**
+   - There is a search bar at the top-right corner with an icon for searching.
+   - Other icons near the search bar include a refresh icon, a help icon, and a profile/settings icon.
+   - The Softeon logo is displayed in the top-right corner.
+
+This interface allows administrators to set and manage access permissions for different screens within the warehouse management system for various user groups and warehouses.

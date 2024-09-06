@@ -1,0 +1,23 @@
+The image is a screenshot of a software interface from Softeon, specifically the "Auto Load Truck by SPN" feature. Here is a detailed breakdown:
+
+1. **Header**:
+   - The top left corner contains the Softeon logo and the tagline "LIMITLESS DELIVERED."
+   - The title of the page is "Auto Load Truck by SPN."
+
+2. **Input Fields**:
+   - **Truck Ref No**: This field is marked with an asterisk, indicating it is a required field. It has a value of "144" entered.
+   - **Loaded By**: This field is empty.
+   - **Tare Weight**: This field is also empty.
+   - **Include Loaded SPNs**: There is a checkbox next to this label, which is currently unchecked.
+
+3. **Buttons**:
+   - **QUERY**: A blue button to perform a query based on the input fields.
+   - **SAVE**: A gray button to save the entered information.
+   - **RESET**: A gray button to reset the entered fields.
+   - **REFRESH**: A blue button to refresh the page or data.
+
+4. **Icons**:
+   - A search icon, a notification bell with a red dot, an alert icon, and a help icon are present in the top right corner.
+   - Next to these icons, there is a user dropdown menu labeled "SFTADMIN."
+
+The interface appears to be part of a logistics or transportation management system, allowing users to enter and manage truck information.

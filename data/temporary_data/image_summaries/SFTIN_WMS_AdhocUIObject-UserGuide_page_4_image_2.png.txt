@@ -1,0 +1,38 @@
+The image shows a screenshot of a user interface (UI) from a software application by Softeon, titled "Adhoc UI Object". The interface is designed for defining or managing objects within a warehouse management system. Here is a detailed breakdown of the elements in the UI:
+
+1. **Logo and Title Bar:**
+   - The top-left corner has the Softeon logo with the tagline "LIMITLESS DELIVERED".
+   - The title of the page is "Adhoc UI Object".
+
+2. **Navigation and User Information:**
+   - The top-right corner includes several icons:
+     - A magnifying glass icon, possibly for search.
+     - A circular arrow icon, likely for refresh.
+     - An exclamation mark in a triangle, possibly for alerts or notifications.
+     - A question mark in a circle, likely for help or support.
+   - The username "SFTADMIN" is displayed with a dropdown arrow next to it, indicating user options or settings.
+
+3. **Form Fields and Labels:**
+   - There are various labeled input fields organized in a form layout:
+     - **Warehouse ID:** Marked with an asterisk (*) indicating it's a required field. The value entered is "WH1".
+     - **Object ID:** Also marked as required. The value entered is "DWN_RP_BATCH_NO".
+     - **Object Length:** An empty input field.
+     - **UI Type:** A dropdown menu (currently collapsed).
+     - **Data Type:** Another dropdown menu (currently collapsed).
+     - **Validation ID:** An empty input field with a selection button next to it.
+     - **Container ID:** An empty input field.
+     - **Min Length:** An empty input field.
+     - **Max Length:** An empty input field.
+     - **Data Source:** A large text area field.
+     - **Container Flag:** A checkbox that is currently unchecked.
+     - **Active:** A checkbox that is currently checked.
+
+4. **Action Buttons:**
+   - At the bottom of the form, there are several action buttons:
+     - **Submit:** For submitting the form data.
+     - **Delete:** For deleting the current object.
+     - **Reset:** For resetting the form fields to their default values.
+     - **Find:** For searching or finding an object.
+     - **Refresh:** For refreshing the form or page.
+
+The UI appears to be part of a warehouse management system, allowing users to configure various parameters related to warehouse objects.

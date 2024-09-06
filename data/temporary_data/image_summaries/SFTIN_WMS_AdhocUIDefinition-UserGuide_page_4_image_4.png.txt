@@ -1,0 +1,36 @@
+The provided image shows a software interface from Softeon titled "Adhoc UI Definition." The interface is designed to manage and define UI elements within a warehouse management system. Here is a detailed breakdown of the interface elements:
+
+1. **Header:**
+   - The top left section contains the Softeon logo and the title "Adhoc UI Definition."
+   - The top right section includes a user menu with the label "SFTADMIN" and several icons for search, history, alerts, and help.
+
+2. **Input Fields:**
+   - **Warehouse ID:** A drop-down field with "WH1" selected.
+   - **Definition ID:** A text input field with "AAC_DEFN" entered.
+   - **Object ID:** A text input field with "AAC_ALIAS_NAME" entered.
+   - **Column Span:** An input field set to "0."
+   - **X Position:** An input field set to "6."
+   - **Y Position:** An input field set to "1."
+   - **Active:** A checkbox that is checked, indicating that the entry is active.
+
+3. **Buttons:**
+   - **Submit:** A button to submit the current entries.
+   - **Delete:** A button to delete the selected entry.
+   - **Reset:** A button to reset the input fields.
+   - **Find:** A button to search for entries.
+   - **Refresh:** A button to refresh the displayed data.
+
+4. **Data Table:**
+   - The table displays a list of records with the following columns:
+     - **Definition ID:** Shows the ID of the definition, which is "AAC_DEFN."
+     - **Object ID:** Shows the object ID, which includes "AAC_ACTIVE_FLAG" and "AAC_ALIAS_NAME."
+     - **X Position:** Displays the X position values, which are "0" and "6."
+     - **Y Position:** Displays the Y position values, which are "2" and "1."
+     - **Column Span:** Displays the column span values, which are both "0."
+     - **Status:** Displays the status of the entries, which are both "Active."
+   - The table highlights the row with "AAC_ALIAS_NAME" in green, indicating it is the currently selected or newly added entry.
+
+5. **Footer:**
+   - A note indicating "Displayed First 999 Records only," suggesting that the table is capable of displaying up to 999 records at a time.
+
+Overall, the interface is used for defining and managing UI elements within a warehouse management system, providing fields for specifying details like warehouse ID, definition ID, object ID, positions, and status.

@@ -1,0 +1,32 @@
+The image is a screenshot of a user interface for a Security Profile management system from a software application named Softeon. The interface is specifically from the "User Access Map" section.
+
+Key elements of the interface include:
+
+1. **Tabs**: 
+   - "User Access Map" is the active tab.
+   - Other tabs available are "User," "Group," "Advanced User Map," and "Menu Access."
+
+2. **Filters and Input Fields**: 
+   - **ORG ID**: Populated with "ORG1" and is marked as a required field (indicated by an asterisk).
+   - **App ID**: Populated with "WMS" and is also a required field.
+   - **Warehouse**: Populated with "WH1".
+   - **User Group**: Populated with "MIS".
+   - **User ID**: Populated with "ARUNPRAK," a required field.
+   - **Business Unit** and **Bldg ID**: Present but not populated.
+
+3. **Buttons**:
+   - **Submit**, **Reset**, **Find**, **Refresh**, and **Copy**.
+
+4. **Search Criteria**:
+   - It includes fields like User Group, App ID, Business Unit, Warehouse ID, and Bldg ID with wildcard (*) values indicating the search criteria.
+
+5. **Data Table**:
+   - Columns include App ID, Warehouse ID, Bldg ID, and Business Unit.
+   - Rows contain data entries primarily with App ID "WMS," Warehouse ID "WH1," and various Bldg IDs and Business Units.
+   - Checkboxes are present for each row, with some checked and some unchecked.
+   - Rows with checked boxes are labeled "Mapped Building and Business Unit," while unchecked rows are labeled "Unmapped Building and Business Unit."
+
+6. **Header and Navigation**:
+   - The top right corner contains a search menu, and navigation icons for additional functionalities (not specifically identified).
+
+The interface appears to be designed for managing user access permissions and mappings for a warehouse management system (WMS).

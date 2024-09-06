@@ -1,0 +1,13 @@
+The image shows a web page interface for setting up security questions, which is likely part of a user account setup or password recovery process. 
+
+At the top left, there is a logo for "Softeon," and the page is titled "SECURITY QUESTIONS." Below the title, there is a directive asking the user to "Please select and complete three questions below to establish your security profile. This profile will be used for authentication purposes in the future when you need to re-establish your password."
+
+There are three dropdown menus labeled "1.", "2.", and "3." with placeholders saying "Choose Questions ..." alongside blank text fields where the user can input their answers.
+
+At the bottom of the form, there are four buttons: 
+- "Submit" (highlighted with a red border indicating its importance),
+- "Reset" (to clear the form),
+- "Refresh" (to reload the page or options),
+- "Re Login" (to log in again).
+
+The overall design is clean and functional, focusing on the task of setting up security questions.

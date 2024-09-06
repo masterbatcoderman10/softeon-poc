@@ -1,0 +1,75 @@
+SOFTEON, INC. 
+11700 Plaza America Dr., Suite 910 
+Reston, Virginia USA 20190 
+Tel 703-793-0005 
+WWW.SOFTEON.COM 
+ 
+ 
+ 
+BOL TYPE 
+User Guide 
+ 
+ 
+ 
+ 
+User Guide 
+2 
+BOL Type 
+Contents 
+Conventions Used ................................................................................................................... 3 
+1. Overview 
+............................................................................................................................... 4 
+2. Adding new BOL Type details ............................................................................................. 4 
+ 
+ 
+ 
+ 
+ 
+User Guide 
+3 
+BOL Type 
+Conventions Used 
+This section interprets the various conventions used in the document for better understanding of the 
+screen functionality. 
+Convention 
+Usage 
+ 
+Denotes the mandatory fields in the screen. Values need to be specified in 
+the fields in order to proceed with the screen operations. 
+ 
+Denotes the fields that show values retrieved from the system. 
+ 
+Any subject content encapsulated in a section marked by this icon indicates 
+that the given information will serve as a useful tip for the end users. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+User Guide 
+4 
+BOL Type 
+1. Overview 
+BOL (Bill of Lading) refers to the receipt given by the carrier to the shipper/warehouse acknowledging the 
+receipt of the goods being shipped and specifying the terms of delivery. 
+You can use the BOL Type screen for maintaining the details of different types of BOLs. The defined BOL 
+Types are used in Carrier Setup screen. The BOL Type is displayed in the Shipping related reports (VICS 
+report). 
+Menu Access: Masters > Outbound > Common > Customer  
+2. Adding new BOL Type details  
+Mandatory Values 
+1) Specify the BOL Type name and BOL Type Desc (BOL Type Description). 
+Optional Values 
+2) Select the Freight Type of BOL from the list. 
+3) Click the link Address and specify the BOL address. 
+ 
+Figure 1 – BOL Type screen  
+On Submitting, the system displays the defined BOL Type details in the grid. 
+ 
+Figure 2 – BOL Type screen – with record  
+ 
+

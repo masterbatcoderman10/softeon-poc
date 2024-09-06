@@ -1,0 +1,25 @@
+The image depicts a user interface screen from a software application related to inventory management, specifically sampling. The interface is branded with the Softeon logo and the slogan "LIMITLESS DELIVERED". 
+
+The screen is titled "Sampling" and contains several fields and buttons. The fields at the top display the following information:
+
+- **LPN (License Plate Number)**: 2019071104
+- **Qty (Quantity)**: 9999.00000
+- **SKU (Stock Keeping Unit)**: B01261
+- **Description**: BIG RED ICON 13586
+
+Below these fields are input boxes labeled:
+
+- **LPN** (marked with a red asterisk indicating a required field)
+- **Required Qty** (marked with a red asterisk indicating a required field)
+- **Disposition CD** (marked with a red asterisk indicating a required field) accompanied by a dropdown menu
+
+At the bottom, there are several buttons with different functions:
+
+- **Add** (highlighted in blue)
+- **Update**
+- **Submit**
+- **Delete**
+- **Reset**
+- **Back**
+
+These elements suggest that the user can add, update, submit, delete, reset, or navigate back from the sampling data entry form.

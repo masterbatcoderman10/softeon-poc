@@ -1,0 +1,31 @@
+The image is a screenshot of a web application interface related to managing Bill of Lading (BOL) types, provided by Softeon.
+
+- **Header Section**:
+  - The top left has the Softeon logo with the tagline "Limitless Delivered".
+  - The title "BOL Type" is displayed prominently.
+  - On the top right, there are several icons: a search icon, a reset icon, an alert icon, a help icon, and a user profile dropdown showing "SFTADMIN".
+
+- **Input Form Section**:
+  - There are fields to input the following:
+    - **BOL Type**: A text box with "C" entered.
+    - **BOL TypeDesc**: A text box with "COLLECT" entered.
+    - **Freight Type**: A dropdown menu with "C - Collect" selected.
+    - **Address**: A text area for entering an address (currently empty).
+    - An "Active" checkbox, which is checked.
+  - Below the input fields, there are action buttons: "Submit", "Delete", "Find", "Reset", and "Refresh".
+
+- **Data Table Section**:
+  - Displays existing BOL types in a table format.
+  - Columns include "BOL Type", "BOL TypeDesc", "Address ID", "Address", "Freight Type", and "Status".
+  - The table has one entry with the following details:
+    - **BOL Type**: C
+    - **BOL TypeDesc**: COLLECT
+    - **Address ID**: (empty)
+    - **Address**: (empty)
+    - **Freight Type**: C
+    - **Status**: Active
+
+- **Styling**:
+  - The input form section has a white background.
+  - The data table has alternating blue and green row colors for differentiation.
+  - The action buttons are blue with white text.

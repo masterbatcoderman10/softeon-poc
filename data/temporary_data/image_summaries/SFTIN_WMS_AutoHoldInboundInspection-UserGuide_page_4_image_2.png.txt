@@ -1,0 +1,27 @@
+The image displays a screenshot from a software interface related to "Auto Hold / Inbound Inspection" by Softeon. The interface appears to be used for managing and inspecting inbound shipments in a warehouse or inventory system.
+
+Here are the key elements in the image:
+
+1. **Header:**
+   - The top-left corner shows the Softeon logo with the tagline "LIMITLESS DELIVERED."
+   - The page title is "Auto Hold / Inbound Inspection."
+   - User options, such as search, recent actions, alerts, help, and user account (SFTADMIN), are located on the top right.
+
+2. **Main Section:**
+   - **LPN (License Plate Number):** The field is labeled "LPN," and the value "2019071104" is entered.
+   - **Vendor:** Two fields labeled "Vendor" with the values "1003" and "1003" respectively.
+   - **SKU (Stock Keeping Unit):** Two fields labeled "SKU" with the values "B01261" and "BIG RED ICON 13586" respectively.
+   - **Rcvd Qty (Received Quantity):** The value is "9999."
+   - **On Hand Qty (On Hand Quantity):** The value is "9999."
+
+3. **Release Hold(s) Section:**
+   - A checkbox labeled "Pallet Hold for insp" is checked.
+   - A field labeled "Release Code" is present but not filled.
+
+4. **Action Buttons:**
+   - The bottom section has five action buttons: "Submit," "Release," "Sampling," "Reset," and "Refresh."
+
+5. **Inspection Level:**
+   - At the bottom left, there's a section labeled "Inspection Level" with the value "INSPECT (4)" in green text.
+
+The interface is likely used for the inspection and management of inbound shipments, allowing users to input relevant details, manage holds, and perform related actions.

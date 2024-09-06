@@ -1,0 +1,21 @@
+The image displays a web-based application interface for managing account information within a business management software, specifically from Softeon. The page is titled "Account," and it's under the "Basic Info" tab, one of several tabs including "General Info" and "Other Info."
+
+Key elements and fields on the page include:
+
+1. **Business Unit**: A required field (indicated by an asterisk) with a dropdown menu. The selected business unit is "01 - Demo Company."
+2. **Account**: Another required field where the account number "10001" has been entered.
+3. **Priority**: An optional field with a dropdown menu, currently blank.
+4. **Paying Office**: A dropdown menu with the code "03" and a description "03 ACCT."
+5. **Terms Code**: A field with the value "101" and the description "1% 30 NET 30."
+6. **Delv Type**: Currently blank.
+7. **Business Unit Address (CO_01)**: Displays the address "11700 Plaza America Dr, Suite #910, Reston, VA-20190, US."
+8. **Cust Bus. Type**: A dropdown menu with the selected value "D - Direct to Store."
+9. **Remit To**: A field with the code "1001" and description "1001-Remit."
+10. **Carrier**: Currently blank.
+11. **GL Account**: Currently blank.
+12. **Account Address**: A required field, currently blank.
+13. **Active**: A checkbox that is checked, indicating the account is active.
+
+At the bottom of the page, there are action buttons for "SUBMIT," "DELETE," "RESET," and "REFRESH," which are used to manage the account information. The top right corner includes navigation buttons for notifications, alerts, help, and user settings (logged in as "SFTADMIN").
+
+The interface is clean and organized, with a focus on input fields necessary for managing account information.

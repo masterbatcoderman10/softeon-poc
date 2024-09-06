@@ -1,0 +1,49 @@
+The provided image is a screenshot of a "Security Profile" page from an application developed by Softeon. The page is designed to manage user access settings for a warehouse management system (WMS).
+
+Key elements of the page include:
+
+1. **Navigation Tabs**: 
+    - User
+    - Group
+    - Advanced User Map
+    - Module Map
+    - User Access Map (currently selected)
+    - Menu Access
+
+2. **Filter Criteria**:
+    - **Organization (ORG1)**
+    - **App ID (WMS)**
+    - **Warehouse (WH1)**
+    - **Building ID (Bldg ID)**
+    - **User Group (MIS)**
+    - **Business Unit**
+    - **User ID (ARUNPRAK)**
+
+3. **Buttons**:
+    - **Submit** (highlighted in red)
+    - **Reset**
+    - **Find**
+    - **Refresh**
+    - **Copy**
+
+4. **Table**:
+    - Columns: 
+        - App ID
+        - Warehouse ID
+        - Bldg ID
+        - Business Unit
+    - Entries:
+        - Multiple rows with values such as:
+            - App ID: WMS
+            - Warehouse ID: WH1
+            - Bldg ID: AED, B1, B2
+            - Business Unit: AED, 01 to 06, 11, 14
+
+5. **Checkboxes**: 
+    - Each row in the table has a checkbox for selection. Some rows are selected, indicated by checked checkboxes.
+
+6. **Other Interface Elements**:
+    - A search menu at the top right.
+    - Icons for search, refresh, help, and user settings.
+
+The overall purpose of the page is to allow administrators to manage user access settings for different warehouses, buildings, and business units within the WMS application.

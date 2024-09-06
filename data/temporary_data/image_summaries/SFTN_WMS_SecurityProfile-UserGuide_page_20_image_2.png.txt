@@ -1,0 +1,14 @@
+The provided image is a screenshot of a software interface from Softeon, specifically for copying menu access to a user group. 
+
+The interface includes the following elements:
+
+1. **Title**: At the top, it says "Copy Menu Access To".
+2. **User Group Field**: Below the title, there is a labeled field "* User Group" where the user group name "EXTGROUP" is entered.
+3. **Buttons**: Below the input field, there are three buttons:
+   - **Submit**: A green button to confirm the action.
+   - **Reset**: A blue button to reset the form.
+   - **Close**: A blue button to close the form.
+
+The image includes some highlighted elements:
+- The "User Group" label and the input field with the text "EXTGROUP" are highlighted with a red border.
+- The "Submit" button is also highlighted with a red border, indicating that it is a primary action that the user might need to take.

@@ -1,0 +1,33 @@
+The image depicts a software interface for "Auto Hold/Inbound Inspection" used in a warehouse management system, likely by Softeon (as indicated by the logo at the top left). The interface appears to facilitate the inspection and verification of incoming shipments.
+
+### Key Elements in the Interface:
+
+1. **Header:**
+   - The title "Auto Hold/Inbound Inspection" is prominently displayed.
+   - Softeon logo and tagline "Limitless Delivered" are in the top left corner.
+   - User account name "SFTADMIN" is shown in the top right corner, along with icons for search, history, alerts, and help.
+
+2. **Main Section:**
+   - **LPN (License Plate Number):** A field labeled "LPN" with the value `2019071104`.
+   - **Vendor:** Two fields labeled "Vendor" both containing the value `1003`.
+   - **SKU (Stock Keeping Unit):** Two fields for SKU numbers, one with the value `B01261` and the other with `BIG RED ICON 13586`.
+   - **Received Quantity (Rcvd Qty):** Field displaying `9999`.
+   - **On Hand Quantity (On Hand Qty):** Field displaying `9999`.
+   - **Release Hold(s):** Checkbox option for "Pallet Hold for insp" with an associated release code field.
+   - **Action Buttons:** Buttons for "Submit," "Release," "Sampling," "Reset," and "Refresh."
+
+3. **Inspection Level:**
+   - On the left side, a label "Inspection Level" with the value `INSPECT (4)` highlighted in red.
+
+4. **Inspection Questions and Answers:**
+   - The bottom section lists inspection questions in a table format.
+   - **Questions:**
+     - "Are the micropaks verified as genuine?"
+     - "Are all skus and quantities accurate?"
+     - "Are there any damages?"
+     - "Are there any flaws?"
+   - **Answers:** Radio button options for "Yes" and "No" for each question.
+   - **Last Verified By and Last Verified Time:** Columns for tracking who last verified the inspections and the time of verification, though these fields are currently empty.
+
+### Summary:
+The interface is designed to manage the inspection of inbound shipments, allowing the user to verify several aspects such as the authenticity of micropaks, the accuracy of SKUs and quantities, and the presence of any damages or flaws. It provides fields for entering vendor and SKU information, and includes action buttons for submitting, releasing, sampling, resetting, and refreshing data. The system also tracks the inspection level and verification details.

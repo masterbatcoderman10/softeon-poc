@@ -1,0 +1,48 @@
+The image is a screenshot of a software interface for managing batch preferences, specifically from a system developed by Softeon. The interface is divided into two main sections: an input form at the top and a data table at the bottom.
+
+### Top Section: Input Form
+1. **Dropdown Menus and Fields:**
+   - **Cust Bus. Type:** Dropdown selection with options like "D - Direct to Store."
+   - **Cust Bus. SubType:** Dropdown selection, currently empty.
+   - **Preference Type:** Dropdown selection, set to "SKU_GRP7."
+   - **Preference ID:** Input field, set to "BPICK."
+   - **Ref ID1:** Input field, currently empty.
+   - **Pref Seq #:** Input field, set to "1."
+   - **Source Batch Pick Route:** Input field, set to "BCP."
+   - **Pick Type:** Dropdown selection, set to "CASE PICK."
+   - **Target Batch Pick Route:** Input field, set to "BCP."
+   - **Quantity Type:** Dropdown selection, currently empty.
+   - **From and To:** Input fields, currently empty.
+   - **UOM:** Dropdown selection, currently empty.
+   - **Quantity:** Checkbox option, currently unchecked.
+
+2. **Buttons:**
+   - **SUBMIT:** Button for submitting the input details.
+   - **DELETE:** Button for deleting a selected record.
+   - **RESET:** Button for resetting the input form.
+   - **FIND:** Button for searching existing records.
+   - **REFRESH:** Button for refreshing the data.
+
+3. **Navigation and User Information:**
+   - Various icons for notifications, help, and user settings (SFTADMIN).
+
+### Bottom Section: Data Table
+1. **Table Columns:**
+   - **Cust Bus. Type:** Indicates the customer business type, e.g., "D - Direct to Store."
+   - **Cust Bus. SubType:** Indicates the customer business subtype, e.g., "SKU_GRP7."
+   - **Preference Type:** Indicates the type of preference, e.g., "BPICK," "CLST," "REG."
+   - **Preference ID:** Unique identifier for the preference, e.g., "BPICK."
+   - **Ref ID1:** Reference ID, e.g., "1."
+   - **Pref Seq #:** Preference sequence number, e.g., "1."
+   - **Source Batch Pick Route:** Route for source batch picking, e.g., "BCP."
+   - **Pick Type:** Type of picking, e.g., "CASE PICK."
+   - **Target Batch Pick Route:** Route for target batch picking, e.g., "BCP."
+   - **Quantity Type:** Type of quantity, e.g., empty.
+   - **From Qty:** Starting quantity, e.g., "0."
+   - **To Qty:** Ending quantity, e.g., "0."
+   - **UOM:** Unit of measure, e.g., empty.
+
+2. **Data Rows:**
+   - Multiple rows displaying data entries with different combinations of the above fields. The rows are highlighted alternately for better readability.
+
+Overall, the system appears to be used for configuring and managing batch picking preferences for a logistics or warehouse management process.

@@ -1,0 +1,62 @@
+The image is a screenshot of a software application interface titled "Adhoc Query Param Setup" from Softeon. The interface is designed for setting up and managing parameters for ad-hoc queries.
+
+### Key Components:
+
+1. **Header:**
+   - The top section contains the Softeon logo and the title "Adhoc Query Param Setup."
+   - The current user is identified as "SFTADMIN" in the top right corner.
+
+2. **Form Fields:**
+   - **Warehouse ID:** WH1
+   - **Query ID:** 1001
+   - **Definition ID:** D30604035614
+   - **Object ID:** 20130604035614555
+   - **Param Caption:** From Date
+   - **Seq No:** 1
+   - **Default Value:** (Empty)
+   - **Param Group ID:** (Empty)
+   - **SQL Placeholder Value:** `AND TRUNC(RR.CREATE_TSTAMP) >= TO_DATE(?,'MM/DD/YYYY')`
+   - **SQL Placeholder Expr:** `$1`
+
+3. **Control Fields:**
+   - **Show Filter:** (Checkbox, unchecked)
+   - **Mandatory Flag:** (Checkbox, unchecked)
+   - **Enable Flag:** (Checkbox, unchecked)
+   - **Param Group Flag:** (Checkbox, unchecked)
+   - **Active:** (Checkbox, checked)
+
+4. **Action Buttons:**
+   - **Submit:** The primary action button, highlighted with a red border.
+   - **Delete**
+   - **Reset**
+   - **Find**
+   - **Refresh**
+
+5. **Table Display:**
+   - Displays the first 999 records with columns: Query ID, Seq No, Param Caption, Definition ID, Object ID, Mandatory Flag, Enable Flag, and Status.
+   - The first two rows are populated with data:
+     - **Row 1:**
+       - Query ID: 1001
+       - Seq No: 1
+       - Param Caption: From Date
+       - Definition ID: D30604035614
+       - Object ID: 20130604035614555
+       - Mandatory Flag: No
+       - Enable Flag: No
+       - Status: Active (highlighted in green)
+     - **Row 2:**
+       - Query ID: 1001
+       - Seq No: 2
+       - Param Caption: To Date
+       - Definition ID: D30604035614
+       - Object ID: 20130604035614563
+       - Mandatory Flag: No
+       - Enable Flag: No
+       - Status: Active (highlighted in green)
+
+6. **Icons:**
+   - Magnifying glass icon (likely for search)
+   - Warning icon (likely for alerts or notifications)
+   - Help icon (likely for assistance or user guide)
+
+Overall, the interface is used to configure parameters for an ad-hoc query within a warehouse management system, allowing the user to set and modify various attributes and SQL expressions related to the query.

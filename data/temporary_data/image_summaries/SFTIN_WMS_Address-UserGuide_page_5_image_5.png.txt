@@ -1,0 +1,27 @@
+The provided image is a screenshot from a software interface, specifically from a section labeled "Address Selection." The software appears to be associated with the brand "Softeon," as indicated by the logo in the top left corner.
+
+Below the "Address Selection" title, there is a user interface element that allows users to copy information. A "BACK" button is also present, likely allowing the user to return to the previous screen. There is also a checkbox labeled "Select the same Address Id" which is checked.
+
+The main part of the image is a table that lists detailed address information. The table has the following columns:
+
+1. Address ID
+2. Address Name
+3. Address
+4. City
+5. State
+6. Zip
+7. Extn
+8. Country
+
+The table contains one row of data with the following values:
+
+- **Address ID:** 10170
+- **Address Name:** CAMERONS_BU
+- **Address:** 4012 NE 59TH ST
+- **City:** GLADSTONE
+- **State:** MO (Missouri)
+- **Zip:** 64119
+- **Extn:** (no value listed)
+- **Country:** US
+
+The row is highlighted with a red border, suggesting it might be the currently selected or active address.

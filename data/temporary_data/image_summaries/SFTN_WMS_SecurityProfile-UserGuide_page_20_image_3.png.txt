@@ -1,0 +1,39 @@
+The image is a screenshot of a software application interface, specifically from a section labeled "Security Profile" within a system likely used for warehouse management, as indicated by various references to warehouse-related terminology. The application appears to be provided by a company named "Softeon," whose logo is displayed in the upper right corner.
+
+Key components of the interface include:
+
+1. **Tabs and Navigation**:
+   - Tabs at the top include "User," "Group," "Advanced User Map," "Module Map," "User Access Map," and "Menu Access," with the "Menu Access" tab currently active.
+
+2. **Selection Criteria**:
+   - There are several dropdown menus and fields at the top for selecting specific criteria:
+     - *Warehouse:* WH1
+     - *Bldg ID:* B1
+     - *User Group:* ADM
+     - *App ID:* WMS
+     - *Business Unit:* [Empty]
+     - *Parent Menu:* [Empty]
+   - Two checkboxes labeled "RF Menu" and "Hybrid" are present but not checked.
+
+3. **Buttons**:
+   - Several buttons are available for interacting with the interface: "Submit," "Copy," "Reset," "Find," "Refresh," and "Report." The "Report" button is highlighted with a red border.
+
+4. **Permissions Table**:
+   - Below the buttons, a table lists screen names related to different functionalities within the system, along with permission checkboxes for "View," "Update," and "Delete." All the visible entries in the table have the "View" checkbox checked, and most also have "Update" and "Delete" checked.
+   - Some of the screen names listed include:
+     - Masters - (1520)
+     - Inbound - (152001)
+     - Warehouse Setup - (15200101)
+     - Location Maintenance - (1520010101)
+     - Location Type - (1520010104)
+     - Aisle Creation - (1520010113)
+     - Aisle Header - (15200101301)
+     - Aisle Detail - (15200101302)
+
+5. **Search and Help Icons**:
+   - The top right corner features icons for search, undo, redo, refresh, help, and user settings.
+
+6. **User Interface Elements**:
+   - The interface is clean and structured, with a focus on ease of navigation and user access control within a warehouse management system.
+
+This screen is likely used to manage user permissions and access to various features/modules within the warehouse management system.

@@ -1,0 +1,131 @@
+SOFTEON, INC. 
+11700 Plaza America Dr., Suite 910 
+Reston, Virginia USA 20190 
+Tel 703-793-0005 
+WWW.SOFTEON.COM 
+ 
+ 
+ 
+ADHOC MASTER TEMPLATE 
+User Guide 
+ 
+ 
+ 
+ 
+User Guide 
+2 
+Adhoc Master Template 
+Contents 
+Conventions Used ................................................................................................................... 3 
+1. Overview 
+............................................................................................................................... 4 
+2. Pre-requisites ....................................................................................................................... 4 
+3. Setting up Master Template 
+................................................................................................. 4 
+ 
+ 
+ 
+ 
+ 
+User Guide 
+3 
+Adhoc Master Template 
+Conventions Used 
+This section interprets the various conventions used in the document for better understanding of the 
+screen functionality. 
+Convention 
+Usage 
+ 
+Denotes the mandatory fields in the screen. Values need to be specified in 
+the fields in order to proceed with the screen operations. 
+ 
+Denotes the fields that show values retrieved from the system. 
+ 
+Any subject content encapsulated in a section marked by this icon indicates 
+that the given information will serve as a useful tip for the end users. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+User Guide 
+4 
+Adhoc Master Template 
+1. Overview 
+You can use the Adhoc Master Template screen for creating set ups for master screens based on the 
+varying customer’s requirement. It is used to define each control’s column name in the table, attributes, 
+and restrictions and to assign Object ID and Definition ID. 
+Menu Access: ADM – Utility > Adhoc Setup > Adhoc Master Template 
+2. Pre-requisites 
+• 
+The UI Object(s) must be created and mapped with Definition ID. 
+3. Setting up Master Template 
+Mandatory Values 
+1) Specify the Template ID for the Master screen, which should be the Table Name that its 
+transaction points out.  
+ 
+Specify the following information for each master screen control. 
+2) Specify the Field Name, which is the column name in the table.  
+3) Specify the Field Caption, the visible name for the control in the screen. 
+4) Specify the Object ID and Definition ID that defines the control type and position in the screen. 
+ 
+• 
+Navigate to ADM – Utility > Adhoc Setup > Adhoc UI Object for setting 
+up UI Object(s) 
+• 
+Navigate to ADM – Utility > Adhoc Setup > Adhoc Definition for 
+setting up the definition for the object(s) 
+ 
+Figure 1 – Adhoc Master Template screen 
+Optional Values 
+5) Specify the Default Value, the value that the control should hold during page load. 
+6) Specify the Key Handler to restrict the type of value that the user enters in the control. 
+ 
+ 
+ 
+ 
+User Guide 
+5 
+Adhoc Master Template 
+ 
+Leave the control blank to accept any kind of value. 
+7) Specify the Code Type, if the control has link to pop-up screen that lists out the possible values in 
+the table column. 
+8) Specify the sequence order in Sort Seq No, by which the template information to be displayed in 
+the screen. 
+9) Choose the alignment for the grid column either as ‘Left’ or ‘Right’ or ‘Center’ from Display Align 
+list. 
+10) Specify the Display Width (in percentage) for grid display column. 
+ 
+The total of the entire grid Columns’ Display Width must be 100 percentage. 
+11) Specify the Validation Query, the condition to validate the value in the control. 
+12) Specify the Validation Message to display, when the value does not meet the condition 
+specified. 
+13) Select the following check boxes with reference to its usage. 
+a. GUI Flag – To display the field as screen control. 
+b. Display Flag – To display the field as gird column. 
+c. Upper Case – The user specifying value is entitled to uppercase irrespective of user’s 
+input case. 
+d. Search Flag – To denote whether the user can search the information in the master 
+screen based on this field or not. 
+e. Mandatory Flag – To denote whether to mandate the user to specify value for this field 
+or not. The system displays this field bolded in the screen. 
+f. 
+Auto Focus – On screen load, the focus is set to the field that has Auto-focus enabled.  
+ 
+If more than one filed has this option enabled, then the priority goes to the field 
+with greater Sort Seq. No. 
+g. Active - To denote whether the particular Master screen is in Active status or not. 
+ 
+ 
+ 
+ 
+User Guide 
+6 
+Adhoc Master Template 
+On Submitting, the system displays the record in the grid. 
+ 
+Figure 2 – Adhoc Master Template screen – with records 
+

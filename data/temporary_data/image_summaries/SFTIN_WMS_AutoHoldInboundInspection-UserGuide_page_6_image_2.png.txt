@@ -1,0 +1,43 @@
+The provided image is a screenshot of a software application interface from Softeon, specifically for "Auto Hold / Inbound Inspection" processes.
+
+### Header
+- **Logo and Company Name**: The top left corner has the Softeon logo and the tagline "LIMITLESS DELIVERED".
+- **Title**: The page is titled "Auto Hold / Inbound Inspection".
+- **User Information**: On the far right, there's a user dropdown labeled "SFTADMIN".
+
+### Main Section
+- **LPN**: A field labeled "LPN" with value "2019071104".
+- **Vendor**: Two fields labeled "Vendor" with the value "1003".
+- **SKU**: Two fields labeled "SKU" with values "B01261" and "BIG RED ICON 13586".
+- **Received Quantity (Rcvd Qty)**: Field with value "9999".
+- **On Hand Quantity (On Hand Qty)**: Field with value "9999".
+
+### Release Hold(s) Section
+- **Release Code**: A mandatory field indicated with an asterisk (*) and labeled "Release Code". Below it, there are fields for "PR" and "PALLET RELEASE".
+
+### Action Buttons
+- **Submit**: A button to submit the form.
+- **Release**: A button to release the hold, highlighted with a red border.
+- **Sampling**: A button likely used for sampling processes.
+- **Reset**: A button to reset the form.
+- **Refresh**: A button to refresh the page.
+
+### Inspection Level
+- **Level**: Indicated as "INSPECT (4)" on the left side.
+
+### Questions Section
+- **Inspection Questions**: A table with questions, answers, and verification details:
+  - "Are the micropaks verified as genuine?" with Yes/No radio buttons.
+  - "Are all SKUs and quantities accurate?" with Yes/No radio buttons.
+  - "Are there any damages?" with Yes/No radio buttons.
+  - "Are there any flaws?" with Yes/No radio buttons.
+- **Last Verified By**: A column for the person who last verified the inspection.
+- **Last Verified Time**: A column for the timestamp of the last verification.
+
+### Icons and Navigation
+- **Search Icon**: Magnifying glass icon for search functionality.
+- **History Icon**: Circular arrow icon for history or previous records.
+- **Alert Icon**: Exclamation mark icon for alerts or notifications.
+- **Help Icon**: Question mark icon for help or support.
+
+The interface is designed for monitoring and inspecting inbound shipments, ensuring that items meet specified criteria before releasing them from a hold status.

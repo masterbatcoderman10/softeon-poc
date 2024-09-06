@@ -1,0 +1,36 @@
+The provided image is a screenshot of a software application interface, specifically from Softeon's "Security Profile" management screen. The interface allows for the management of user groups and their associated users. 
+
+Key sections and elements of the interface include:
+
+1. **Tabs at the Top**:
+   - **User**: Possibly to manage individual user profiles.
+   - **Group**: Likely for managing user groups.
+   - **Advanced User Map**: The current active tab, which allows for advanced mapping of users to groups.
+   - **Module Map**: Potentially for mapping users to specific modules.
+   - **User Access Map**: Likely for managing user access rights.
+   - **Menu Access**: Possibly for controlling user access to different menu items.
+
+2. **Search Bar**:
+   - Located at the top-right corner, allowing users to search through the menu.
+
+3. **User Group Selection** (Left Section):
+   - A table listing different user groups with two columns:
+     - **User Group**: ID of the user group (e.g., ADM, DMUG, EXTGROUP, MIS, etc.).
+     - **Name**: Description of the user group (e.g., Admin user group, demouser, etc.).
+   - Radio buttons next to each user group allow for selection. The "ADM" (Admin user group) is currently selected.
+
+4. **User Selection** (Right Section):
+   - A table listing users with two columns:
+     - **User ID**: Unique identifier for each user.
+     - **Name**: Full name or description of the user.
+   - Checkboxes next to each user allow for selection. Several users (CMURUGES, JARROYO, MAHESH, SFTADMIN) are currently selected, while others are not.
+
+5. **Buttons at the Bottom**:
+   - **Submit**: Likely to save or apply the changes made. The button is prominently highlighted.
+   - **Reset**: Probably to clear any selections or changes made.
+   - **Refresh**: Likely to reload the current data or view.
+
+6. **Miscellaneous Icons**:
+   - At the top-right corner, there are icons for various common functions such as help, notifications, user profile, and settings.
+
+Overall, the interface is designed for administrators to map users to different groups, manage user access, and perform related security profile tasks within the Softeon application.

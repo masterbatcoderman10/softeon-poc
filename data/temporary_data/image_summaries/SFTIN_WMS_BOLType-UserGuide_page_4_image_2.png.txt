@@ -1,0 +1,34 @@
+The provided image is a screenshot from a software interface related to managing Bill of Lading (BOL) types. Here's a detailed summary of the image:
+
+1. **Header**:
+   - The top left corner has a logo for "Softeon" with the tagline "LIMITLESS DELIVERED."
+   - The title "BOL Type" is prominently displayed in the center of the header.
+
+2. **Navigation and User Interface Icons**:
+   - In the top right corner, there are several icons:
+     - A magnifying glass icon (likely for search functionality).
+     - A circular arrow icon (possibly for a refresh or reload action).
+     - An exclamation mark inside a triangle (possibly an alert or warning section).
+     - A question mark inside a circle (likely a help or information section).
+   - To the far right, there is a dropdown menu displaying "SFTADMIN," indicating the logged-in user or user role.
+
+3. **Main Form Section**:
+   - There are two primary fields with labels and input areas:
+     - `BOL Type`: The input value is "C."
+     - `BOL TypeDesc`: The input value is "COLLECT."
+   - The `Freight Type` dropdown menu is set to "C - Collect."
+   - An `Address` section appears on the right side, which is currently empty.
+   - There is a checkbox labeled "Active," which is checked.
+
+4. **Action Buttons**:
+   - Below the form fields, there are six buttons for different actions:
+     - `Submit`: Likely to save or submit the form data.
+     - `Delete`: To remove the current entry.
+     - `Find`: To search for existing entries.
+     - `Reset`: To clear the form fields and reset to default values.
+     - `Refresh`: To reload or refresh the page.
+
+5. **Field Labels**:
+   - Labels for `BOL Type` and `BOL TypeDesc` are marked with an asterisk (*), indicating that these fields are likely required.
+
+Overall, the interface seems to be a part of a logistics or warehouse management system where users can manage different types of Bills of Lading. The form allows users to enter or modify BOL types, descriptions, freight types, and address information, and provides options to submit, delete, find, reset, or refresh the data.

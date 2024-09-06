@@ -1,0 +1,36 @@
+The provided image is a screenshot of a software interface for managing account information, specifically within a module of the Softeon system. The interface is part of the "General Info" tab under account settings.
+
+### Key Elements of the Interface:
+
+- **Header Section:**
+  - The Softeon logo and the "Account" label are displayed at the top.
+  - Navigation icons for search, notifications, alerts, and help are present along with the user profile section (SFTADMIN).
+
+- **Tabs:**
+  - The interface has three main tabs: "Basic Info," "General Info" (currently selected), and "Other Info."
+
+- **Form Fields and Options:**
+  - **Business Unit:** A dropdown menu to select the business unit (e.g., "01 - Demo Company").
+  - **Account:** A text box with the account number (e.g., "10001") and a checkbox to mark the account as active.
+  - **Case Flag, Case Lbl Style, LPN Flag, LPN Lbl Style:** Checkboxes and dropdown menus for setting label styles and flags.
+  - **Transmit Type:** A dropdown menu to select the type of transmission (e.g., "M - INVOICE THRU MAIL").
+  - **Alloc Point:** A dropdown menu for allocation points (e.g., "10 - Allocation during Order Entry Complete").
+  - **Deal Cd Cust Catg, Packing Slip Gen. Lvl, Invoice Type, Vendor ID, District Center #:** Various input fields and dropdown menus for specific configuration options.
+  - **Shelf Life Basis1, Shelf Life Basis2, Min Shelf Life, Ship Buffer Days:** Fields related to shelf life management.
+  - **Ship Day Range:** Checkboxes for selecting shipping days (Sun-Sat).
+  - **Additional Options:** Checkboxes for:
+    - Allow Backorder
+    - Multi Shipment
+    - Mand. Fulfill
+    - Price Override
+    - Load No Reqd Flag
+    - MBOL Req Flag (with options Yes, No, Combine)
+  
+- **Action Buttons:**
+  - At the bottom, there are four action buttons:
+    - **Submit:** To save the changes.
+    - **Delete:** To delete the account.
+    - **Reset:** To reset the form fields.
+    - **Refresh:** To refresh the page.
+
+This interface allows users to configure and manage various account-related settings, ensuring that all relevant information and preferences are accurately captured and maintained within the system.

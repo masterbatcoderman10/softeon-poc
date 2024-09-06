@@ -1,0 +1,35 @@
+This image is a screenshot of the "Security Profile" section from an application interface by Softeon. The interface is likely used for managing user access and permissions within a warehouse management system.
+
+Key elements in the image:
+
+1. **Tabs**:
+   - There are multiple tabs at the top: "User", "Group", "Advanced User Map", "Module Map", "User Access Map", and "Menu Access". The "Menu Access" tab is currently selected.
+
+2. **Fields and Labels**:
+   - **Warehouse**: Dropdown menu with "WH1" selected.
+   - **Bldg ID**: Input field with "B1" entered.
+   - **User Group**: Input field with "ADM" entered.
+   - **App ID**: Input field with "WMS" entered.
+   - **Business Unit**: Input field, currently empty.
+   - **Parent Menu**: Input field, currently empty.
+   - **RF Menu**: Checkbox, not checked.
+   - **Hybrid**: Checkbox, not checked.
+
+3. **Buttons**:
+   - **Submit**: Likely for submitting the entered data.
+   - **Copy**: Likely for copying the current configuration.
+   - **Reset**: Likely for resetting the fields to their default values.
+   - **Find**: Button for searching or finding specific entries.
+   - **Refresh**: Likely for refreshing the current view.
+   - **Report**: Likely for generating a report based on the current configuration.
+
+4. **Search Menu**:
+   - There is a search bar at the top for searching through the menu.
+
+5. **Icons**:
+   - Various icons are present at the top right, possibly for notifications, help, settings, and user profile.
+
+6. **Logo**:
+   - The Softeon logo is present at the top left corner.
+
+Important fields are marked with red boxes, indicating they are mandatory or significant for the current operation.

@@ -1,0 +1,18 @@
+The image is a screenshot from a software interface provided by Softeon, a company that offers supply chain solutions. The screenshot displays a section labeled "Address," which contains detailed address information in a tabular format. 
+
+Here are the specific details provided for the address:
+
+- **Address ID:** 10171
+- **Address:** 4248 Meridian Parkway
+- **City:** Aurora
+- **State:** IL (Illinois)
+- **Zip:** 60504
+- **Extn:** (No extension is provided)
+- **Country Code:** US (United States)
+
+Additionally, the interface includes typical software navigation elements:
+- A sidebar menu icon on the top left.
+- A search icon, notification bell icon with a red dot indicating a new notification, a warning icon, and a help icon on the top right.
+- The user is identified as "SFTADMIN" in the top right corner.
+
+The row with the address details is highlighted in green, which might indicate that it is selected or active.

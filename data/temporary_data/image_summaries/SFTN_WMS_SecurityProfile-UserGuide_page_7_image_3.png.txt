@@ -1,0 +1,74 @@
+The image displays a user interface from a software application named Softeon, specifically from the "Security Profile" section. Here is a detailed breakdown of the interface:
+
+### Header
+- **Logo and Application Name**: "Softeon" is displayed at the top left.
+- **Search Bar**: A search menu bar is available at the top right.
+- **Icons**: Icons for different functionalities such as search, settings, help, and user profile are present next to the search bar.
+
+### Navigation Tabs
+- **Tabs**: The interface contains several tabs for different sections including:
+  - User
+  - Group
+  - Advanced User Map
+  - Module Map
+  - User Access Map
+  - Menu Access
+
+### Main Section (User Tab Selected)
+#### Form Fields
+- **First Name**: Entered as "Automation".
+- **Last Name**: Entered as "User".
+- **User ID**: Entered as "ATMUSER1".
+- **Password**: An input field for the password.
+- **Confirm Password**: An input field to confirm the password.
+- **Supervisor Password**: A required field.
+- **E-Mail**: An empty input field.
+- **Portal/Dashboard**: Dropdown selected as "-NA-".
+- **Voice User Picking Mode**: A checkbox.
+- **Two Factor Auth Req**: Dropdown selected as "NOT REQUIRED".
+- **User Group**: Dropdown selected as "S7UG1".
+
+#### Checkboxes
+- **Admin User**: Unchecked.
+- **RF User**: Checked.
+- **Login Locked**: Unchecked.
+- **Delete security questions**: Unchecked.
+- **Change password during next logon**: Checked.
+- **Active**: Checked.
+
+#### Buttons
+- **Submit**
+- **Delete**
+- **Reset**
+- **Find**
+- **Refresh**
+- **Security Questions**
+- **Copy From** (Highlighted with a red rectangle)
+
+### Additional Info
+- **Additional Info**: A section to add extra information.
+
+### User List Table
+- **Columns**:
+  - User ID
+  - User Name
+  - User Type
+  - User Type ID
+  - User Group
+  - Picking Mode
+  - Report Printer
+  - Label Printer
+  - Status
+
+- **Highlighted Row**: The row for the user "ATMUSER1" is highlighted.
+  - **User ID**: ATMUSER1
+  - **User Name**: Automation User
+  - **User Type**: Internal Users
+  - **User Type ID**: Internal
+  - **User Group**: S7UG1
+  - **Picking Mode**: DUMMY_LASER
+  - **Report Printer**: DUMMY_LASER
+  - **Label Printer**: DUMMY_LABEL
+  - **Status**: Active
+
+The entire interface is designed to manage user profiles, including creating, editing, and viewing user details and access permissions.

@@ -1,0 +1,86 @@
+SOFTEON, INC. 
+11700 Plaza America Dr., Suite 910 
+Reston, Virginia USA 20190 
+Tel 703-793-0005 
+WWW.SOFTEON.COM 
+ 
+ 
+ 
+AUTO LOAD TRUCK BY SPN 
+User Guide 
+ 
+ 
+ 
+ 
+User Guide 
+2 
+Auto Load Truck By SPN 
+Contents 
+Conventions Used ................................................................................................................... 3 
+1. Overview 
+............................................................................................................................... 4 
+2. Pre-requisites ....................................................................................................................... 4 
+3. Loading the SPNs into the LTL Truck ................................................................................. 4 
+4. What’s Next? ........................................................................................................................ 5 
+ 
+ 
+ 
+ 
+ 
+User Guide 
+3 
+Auto Load Truck By SPN 
+Conventions Used 
+This section interprets the various conventions used in the document for better understanding of the 
+screen functionality. 
+Convention 
+Usage 
+ 
+Denotes the mandatory fields in the screen. Values need to be specified in 
+the fields in order to proceed with the screen operations. 
+ 
+Denotes the fields that show values retrieved from the system. 
+ 
+Any subject content encapsulated in a section marked by this icon indicates 
+that the given information will serve as a useful tip for the end users. 
+ 
+ 
+ 
+ 
+ 
+ 
+User Guide 
+4 
+Auto Load Truck By SPN 
+1. Overview 
+You can use the Auto Load Truck By SPN screen for loading one or more SPNs into the LTL truck at a 
+time. 
+Menu Access: Operations > Outbound > Shipping > LTL > Auto Load Truck By SPN 
+2. Pre-requisites 
+• 
+Truck Ref Number must be defined. 
+3. Loading the SPNs into the LTL Truck 
+1) Specify/select the LTL Truck Reference Number which is in 'Open' status in Truck Ref No. 
+ 
+Figure 1 - Auto Load Truck By SPN screen 
+On Querying, the system displays the truck details in the grid. 
+ 
+Figure 2 - Auto Load Truck By SPN screen - with records 
+2) Select the check box (es) of the record from the grid. 
+To select all the records, select the check box in the grid header. 
+3) Specify the Tare Weight (wooden pallet weight), if required. 
+ 
+Figure 3 - Auto Load Truck screen with selected record  
+ 
+ 
+ 
+ 
+User Guide 
+5 
+Auto Load Truck By SPN 
+On Saving, the system displays the information message as “Selected SPNs are loaded into 
+this Truck” 
+4. What’s Next? 
+• 
+Navigate to Unload Truck (RF) screen for unloading the loaded SPN(s) from the truck. 
+

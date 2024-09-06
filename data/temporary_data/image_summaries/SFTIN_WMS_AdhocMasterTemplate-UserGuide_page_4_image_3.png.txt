@@ -1,0 +1,69 @@
+The image shows a screen capture of a web-based form titled "Adhoc Master Template" from a software application by Softeon. The form appears to be used for setting up or editing a template related to SKU (Stock Keeping Unit) profiles.
+
+Key elements of the form include:
+
+1. **Template ID**:
+   - Label: Template ID
+   - Value: SKU_PROFILE
+   - Asterisk indicates this is a required field.
+
+2. **Object ID**:
+   - Label: Object ID
+   - Value: SKU_RETURNS_ALLOWED_FLAG
+   - Asterisk indicates this is a required field.
+
+3. **Field Name**:
+   - Label: Field Name
+   - Value: RETURNS_ALLOWED_FLAG
+   - Asterisk indicates this is a required field.
+
+4. **Field Caption**:
+   - Label: Field Caption
+   - Value: lblreturnsallowedflag
+   - Asterisk indicates this is a required field.
+
+5. **Definition ID**:
+   - Label: Definition ID
+   - Value: SKU_MASTER
+   - Asterisk indicates this is a required field.
+
+6. **Default Value**: An empty field where the default value for the template can be entered.
+
+7. **Sort Seq No**: An empty field for entering the sort sequence number.
+
+8. **Display Align**: A dropdown menu set to "Left" to determine the alignment of the display.
+
+9. **Display Width**: An empty field for specifying the width of the display.
+
+10. **Validation Message**: An empty field for entering a validation message.
+
+11. **Key Handler**: An empty field for specifying a key handler.
+
+12. **Validation Query**: An empty field for entering a validation query.
+
+13. **Code Type**: An empty field for specifying the code type.
+
+14. **Control Fields**: Various checkboxes including:
+    - GUI Flag
+    - Display Flag (checked)
+    - Upper Case
+    - Search Flag
+    - Mandatory Flag
+    - Auto Focus
+    - Active (checked)
+
+15. **Action Buttons**:
+    - Submit
+    - Delete
+    - Reset
+    - Find
+    - Refresh
+
+16. **Navigation and User Interface Elements**:
+    - Search icon
+    - History icon
+    - Alert icon
+    - Help icon
+    - User dropdown labeled "SFTADMIN"
+
+The form appears to be part of a system for managing SKU profiles, allowing users to input and configure various settings related to SKU attributes.

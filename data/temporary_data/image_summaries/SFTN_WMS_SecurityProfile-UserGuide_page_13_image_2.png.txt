@@ -1,0 +1,42 @@
+The provided image is a screenshot of a software interface from Softeon, specifically the "Security Profile" section. The interface is designed for managing user access and permissions.
+
+### Breakdown of the Interface:
+
+1. **Tabs at the Top**:
+   - The interface has several tabs for navigation: 
+     - User
+     - Group
+     - Advanced User Map
+     - Module Map (currently selected)
+     - User Access Map
+     - Menu Access
+
+2. **Header and Search**:
+   - The header displays the Softeon logo and name.
+   - There's a search bar labeled "Search menu..." for quick access to different functionalities.
+
+3. **Main Content Area**:
+   - **Warehouse and Module Selection**:
+     - Warehouse: The dropdown is set to "WH1".
+     - Module: The dropdown is set to "ADM-Admin Management".
+   - **User Group Selection**: A table listing user groups with columns "User Group" and "Name".
+     - ADM (Admin user group)
+     - DMUG (demouser)
+     - EXTGROUP (EXTGROUP)
+     - MIS (MIS user group)
+     - S7UG1 (ATM User Group)
+     - UIGRP (UI Group)
+     - S7UG2 (ATM User Group)
+     - S7UG3 (ATM User Group)
+     - Each row has a checkbox for selection. Several groups are checked, except for S7UG2 and S7UG3.
+
+4. **User Group/User ID Toggle**:
+   - There are radio buttons for toggling between "User Group" (selected) and "User ID".
+
+5. **Buttons at the Bottom**:
+   - Submit (highlighted in green)
+   - Reset
+   - Refresh
+
+### Summary:
+The image shows a user interface where an administrator can manage security profiles for different user groups in a warehouse management system. The admin can select or deselect user groups, choose the warehouse and module for which the permissions apply, and use the submit, reset, or refresh buttons to apply the changes. The interface is clean and intuitive, focusing on ease of managing user permissions.

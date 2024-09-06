@@ -1,0 +1,33 @@
+The image displays a user interface for an account management module within a software application developed by Softeon. The interface is labeled "Account" and falls under the "Other Info" tab, with two other tabs available: "Basic Info" and "General Info."
+
+Here is a detailed breakdown of the interface elements:
+
+1. **Header Section:**
+   - The Softeon logo and the "Account" title are displayed at the top left.
+   - User options such as a search icon, notification, alert, help icon, and user profile (showing "SFTADMIN") are located at the top right.
+
+2. **Account Information:**
+   - **Business Unit:** A dropdown menu labeled "Business Unit" with the selected option "01 - Demo Company."
+   - **Account:** A text field with the value "10001" and labeled "Account." This field is accompanied by a calendar icon.
+   - **Active:** A checkbox labeled "Active" is checked, indicating the account is active.
+
+3. **Sales Territory Details:**
+   - **Division:** A text field for entering the division.
+   - **Region:** A text field for entering the region.
+   - **Territory:** A text field for entering the territory.
+   - **Marketing Coordinator:** A text field with an accompanying calendar icon.
+   - **Account Coordinator:** A text field with an accompanying calendar icon.
+   - **Customer Service Rep.:** A text field with an accompanying calendar icon.
+
+4. **Hdr Comment Section:**
+   - **BOL Instruction1:** A text area for entering the first bill of lading instruction.
+   - **BOL Instruction2:** A text area for entering the second bill of lading instruction.
+   - **BOL Instruction3:** A text area for entering the third bill of lading instruction.
+
+5. **Action Buttons:**
+   - **SUBMIT:** A blue button for submitting the form.
+   - **DELETE:** A blue button for deleting the form.
+   - **RESET:** A blue button for resetting the form fields.
+   - **REFRESH:** A blue button for refreshing the form.
+
+Overall, the interface appears to be designed for detailed data entry and management of account information, specifically related to sales territories and associated instructions.

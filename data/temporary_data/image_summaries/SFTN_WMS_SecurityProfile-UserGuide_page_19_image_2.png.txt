@@ -1,0 +1,39 @@
+The image displays a screen from the Softeon software, specifically within the 'Security Profile' section. This section appears to be related to the configuration of user access settings for a warehouse management system (WMS).
+
+### Details of the Screen:
+1. **Header and Navigation:**
+   - The screen is titled "Security Profile."
+   - The navigation tabs at the top include: User, Group, Advanced User Map, Module Map, User Access Map, and Menu Access.
+
+2. **Configuration Fields:**
+   - **Warehouse:** Dropdown with "WH1" selected.
+   - **Bldg ID:** Field with "B1" entered.
+   - **User Group:** Dropdown with "ADM" selected.
+   - **App ID:** Field with "WMS" entered.
+   - **Business Unit:** Field is empty.
+   - **Parent Menu:** Field is empty.
+   - **Options:** Two checkboxes for "RF Menu" and "Hybrid," both unchecked.
+
+3. **Action Buttons:**
+   - A row of action buttons is present, including "Submit," "Copy," "Reset," "Find," "Refresh," and "Report." The "Submit" button is highlighted with a red border.
+
+4. **Permissions Table:**
+   - The table lists different screen names along with their corresponding IDs.
+   - Columns are for permissions: "View," "Update," and "Delete."
+   - Checkboxes are used to indicate permission settings. In the image, all checkboxes under "View," "Update," and "Delete" are checked for the listed screens, implying full permissions are granted for all actions.
+
+5. **Screen Names and IDs:**
+   - Masters (1520)
+   - Inbound (152001)
+   - Warehouse Setup (15200101)
+   - Location Maintenance (1520010101)
+   - Location Type (1520010104)
+   - Aisle Creation (1520010113)
+   - Aisle Header (15200101301)
+   - Aisle Detail (15200101302)
+
+6. **Miscellaneous:**
+   - The top-right corner includes a search bar and several icons, likely for help, notifications, and user account settings.
+   - The Softeon logo is displayed in the top-right corner of the screen.
+
+Overall, this screen is used to assign and manage access permissions for different user groups to various screens within the warehouse management system.

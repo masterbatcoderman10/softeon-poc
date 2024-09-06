@@ -1,0 +1,7 @@
+The provided image is a repetitive geometric pattern consisting of white shapes on a black background. Each unit in the pattern is composed of a series of elements:
+
+1. **Circle**: A white circle is positioned at the top left of each unit.
+2. **Quarter Circle**: Below the circle, there is a quarter circle with the curved side facing outwards.
+3. **Rectangular Shapes**: The remaining part of the unit is filled with rectangular shapes that fit around the circle and quarter circle, creating a cohesive design.
+
+The pattern is organized in a grid format, with each unit repeated both horizontally and vertically, forming a seamless, continuous design.

@@ -1,0 +1,36 @@
+The image is a screenshot of a web application interface titled "Adhoc UI Definition" by Softeon. 
+
+Here are the key elements and details:
+
+1. **Logo and Title**:
+   - The Softeon logo is positioned at the top left.
+   - The title of the page is "Adhoc UI Definition."
+
+2. **Fields and Inputs**:
+   - There are three mandatory fields marked with an asterisk (*):
+     - **Warehouse ID**: Filled with "WH1". The field is highlighted in green.
+     - **Definition ID**: Filled with "AAC_DEFN". The field is bordered in red.
+     - **Object ID**: Filled with "AAC_ALIAS_NAME". The field is bordered in red.
+   - Additional fields include:
+     - **Column Span**: Empty.
+     - **X Position**: Empty.
+     - **Y Position**: Empty.
+     - **Active**: Checkbox is checked.
+
+3. **Action Buttons**:
+   - Below the fields are six buttons: 
+     - **Submit**
+     - **Delete**
+     - **Reset**
+     - **Find**
+     - **Refresh**
+
+4. **Navigation and User Options**:
+   - At the top right, there are several icons:
+     - A search icon.
+     - A history or undo icon.
+     - An alert icon.
+     - A help or information icon.
+   - A user dropdown menu labeled "SFTADMIN" is also present, indicating the logged-in user.
+
+This interface seems to be used for configuring or defining certain elements related to warehouse management within the Softeon system.

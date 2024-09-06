@@ -1,0 +1,55 @@
+The image displays a screenshot of a "Security Profile" interface from a software application named "Softeon." The interface appears to be used for managing user access within a warehouse management system (WMS). Here’s a detailed summary:
+
+### Interface Components:
+1. **Navigation Tabs:**
+   - "User"
+   - "Group"
+   - "Advanced User Map"
+   - "Module Map"
+   - "User Access Map"
+   - "Menu Access"
+
+2. **Filters and Fields:**
+   - **Organization (ORG1)**
+   - **App ID (WMS)**
+   - **Warehouse (WH1)**
+   - **Bldg ID** (Building ID)
+   - **User Group (ADM)**
+   - **Business Unit**
+   - **User ID**
+
+3. **Buttons:**
+   - **Submit** (highlighted with a red border)
+   - **Reset**
+   - **Find**
+   - **Refresh**
+   - **Copy**
+
+4. **Table:**
+   - Contains columns for:
+     - **App ID**
+     - **Warehouse ID**
+     - **Bldg ID**
+     - **Business Unit**
+
+   - Multiple rows are listed with the following details:
+     - App ID: All entries are "WMS."
+     - Warehouse ID: All entries are "WH1."
+     - Bldg ID: Values include "AED," "B1," "B2," etc.
+     - Business Unit: Values include "AED," "01," "02," "03," etc.
+   - Checkbox column on the left with some checkboxes selected and others unselected.
+
+### Additional Interface Elements:
+- **Search Menu:** Located at the top right, allowing users to search through the menu.
+- **Icons:** 
+  - Search icon (magnifying glass)
+  - Undo/redo icons
+  - Help icon (question mark)
+  - User settings icon
+  - Logout icon
+
+### Branding:
+- The Softeon logo is displayed at the top left corner.
+
+### Summary:
+This interface is used to define and manage security profiles for users within the Softeon WMS application. It allows administrators to assign access rights based on various criteria, such as application ID, warehouse ID, building ID, and business unit. The table provides an overview of current access settings, and the checkboxes allow for easy selection and modification of these settings. The submit button is prominently highlighted, indicating its importance for confirming changes made on this interface.

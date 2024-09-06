@@ -1,0 +1,39 @@
+The image is a screenshot of a software interface titled "Batch Preference" from Softeon. It appears to be part of a warehouse or inventory management system. Below is a detailed summary of the various elements and fields present in the screenshot:
+
+### Top Section:
+- **Softeon Logo**: Located in the top-left corner with the tagline "LIMITLESS DELIVERED."
+- **Title**: "Batch Preference" is displayed prominently next to the logo.
+- **User Icon and ID**: In the top-right corner, there is a user icon labeled "SFTADMIN."
+
+### Search and Notification Icons:
+- **Magnifying Glass Icon**: Likely for searching within the system.
+- **Bell Icon**: Possibly for notifications.
+- **Warning Icon**: Could be for alerts or warnings.
+- **Question Mark Icon**: Possibly for help or support.
+
+### Main Form Elements:
+- **Cust Bus. Type**: A dropdown menu with the selected value "D - Direct to Store."
+- **Cust Bus. SubType**: An empty dropdown field.
+
+### Form Fields (with Red Asterisks indicating mandatory fields):
+- **Source Batch Pick Route**: A dropdown field with the selected value "BCP."
+- **Preference Type**: Input field with the value "SKU_GRP7."
+- **Pick Type**: Input field with the value "C."
+- **Preference ID**: Input field with the value "BPICK."
+- **Pref Seq #**: Input field with the value "1."
+
+### Additional Fields:
+- **Batch Case Pick**: An input field labeled but not editable.
+- **Quantity**: A checkbox labeled "Quantity" is unchecked.
+- **Quantity Type**: A dropdown field with no value selected.
+- **From - To**: Two empty input fields for a range, possibly dates or quantities.
+- **UOM**: A dropdown field with the value selected as "UOM."
+
+### Buttons:
+- **SUBMIT**: Blue button for submitting the form.
+- **DELETE**: Blue button for deleting the form data.
+- **RESET**: Blue button for resetting the form fields.
+- **FIND**: Blue button for finding or searching existing records.
+- **REFRESH**: Blue button for refreshing the data on the form.
+
+The interface is well-structured, making it easy to enter and manage batch preferences, likely for inventory or order management purposes.

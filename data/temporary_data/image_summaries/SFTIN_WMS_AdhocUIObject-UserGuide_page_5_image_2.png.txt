@@ -1,0 +1,48 @@
+The provided image is a screenshot of a web application interface for managing an "Adhoc UI Object" in a system provided by Softeon.
+
+### Header
+- **Logo:** The Softeon logo is displayed at the top-left corner with the tagline "LIMITLESS DELIVERED."
+- **Title:** The title "Adhoc UI Object" is prominently displayed.
+- **User Information:** The user logged in is identified as "SFTADMIN."
+- **Navigation Icons:** Several icons are available for search, alerts, help, and user settings.
+
+### Form Section
+The form is used to input or modify details for an Adhoc UI Object. The fields in the form include:
+- **Warehouse ID:** A required field with the value "WH1."
+- **Object ID:** A required field with the value "DWN_RP_BATCH_NO."
+- **UI Type:** A dropdown menu, no selection shown.
+- **Data Type:** A dropdown menu, no selection shown.
+- **Object Length:** A numeric field with a value of "0."
+- **Min Length:** A numeric field with a value of "0."
+- **Max Length:** A numeric field with a value of "0."
+- **Validation ID:** An input field, currently empty.
+- **Container ID:** An input field, currently empty.
+- **Data Source:** A text area, currently empty.
+- **Container Flag:** A checkbox, checked.
+- **Active:** A checkbox, checked.
+
+### Action Buttons
+Below the form are several action buttons:
+- **Submit:** A button outlined in red, suggesting it is the primary action.
+- **Delete:** A button likely used to remove an object.
+- **Reset:** A button to clear or reset the form fields.
+- **Find:** A button to search for objects.
+- **Refresh:** A button to refresh the form or data.
+
+### Data Table
+Below the action buttons is a data table with the following columns:
+- **Object ID:** "DWN_RP_BATCH_NO"
+- **UI Type:** "T"
+- **Data Type:** "S"
+- **Object Length:** "10"
+- **Validation ID:** Empty
+- **Container ID:** Empty
+- **Max Length:** "100"
+- **Min Length:** "0"
+- **Container Flag:** "No"
+- **Status:** "Active"
+
+The row is highlighted in green, likely indicating that it is the selected or active row.
+
+### Summary
+The interface allows the user to manage Adhoc UI Objects by inputting various parameters and submitting the form. The data table below shows the existing objects with their respective attributes. The user can perform actions such as submitting, deleting, resetting, finding, and refreshing the data.
