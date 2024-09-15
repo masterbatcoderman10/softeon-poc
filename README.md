@@ -28,6 +28,12 @@ $ pip install -r requirements_w.txt # On Windows
 
 ## Running the Application
 
+Prior to running the application, it will be important to setup the vector database. This can be done by running the following command in the terminal:
+
+```bash
+python3 -m etl.loading
+```
+
 To run the application after setup, run the following command in the terminal:
 
 ```bash

@@ -259,5 +259,5 @@ if __name__ == "__main__":
     # load_retriever("data/processed_data/text", "data/processed_data/images",
     #                "data/processed_data/image_summaries")
     # print("Data loaded successfully")
-    tag_documents("data/temporary_data/text", "data/temporary_data/file_metadata", "data/temporary_data/image_summaries")
+    # tag_documents("data/temporary_data/text", "data/temporary_data/file_metadata", "data/temporary_data/image_summaries")
     create_documents_and_load("data/temporary_data/text", "data/temporary_data/file_metadata/metadata_v1.json", img_summary_dir="data/temporary_data/image_summaries")
