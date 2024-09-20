@@ -8,3 +8,4 @@ __pycache__/
 *.png
 # data/db/
 data/processed_files/*
+.chainlit/

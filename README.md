@@ -21,6 +21,7 @@ This can be done in 2 ways:
 $ python3 -m venv venv
 $ source venv/bin/activate # On Mac
 $ venv\Scripts\activate # On Windows
+$ pip install --upgrade pip
 $ pip install -r requirements.txt # On Mac/Linux
 $ pip install -r requirements_w.txt # On Windows
 ```

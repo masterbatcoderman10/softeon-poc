@@ -3,7 +3,7 @@ from langchain_community.chat_message_histories import ChatMessageHistory
 import io
 import re
 import tiktoken
-from IPython.display import HTML, display
+# from IPython.display import HTML, display
 from langchain_core.runnables import RunnableLambda, RunnablePassthrough
 from PIL import Image
 import pickle
